@@ -10,6 +10,7 @@ class Mail {
 		this.url = url;
 	}
 	dispatchSend(html) {
+		console.log(html);
 		return axios({
 			method: "POST",
 			url: this.url,
@@ -24,7 +25,8 @@ class Mail {
 			}
 		}).then((response) => {
 			const { success, message } = response.data;
-			if(success) {
+			console.log(response)	
+		if(success) {
 				return NotificationManager.success(message, 'Успех');
 			} else {
 				return NotificationManager.error(message, 'Ошибка');

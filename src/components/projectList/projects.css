@@ -102,3 +102,6 @@
 	top:15px;
 	right:15px;
 }
+.project.small {
+	min-width:190px!important
+}
