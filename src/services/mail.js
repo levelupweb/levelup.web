@@ -10,7 +10,7 @@ class Mail {
 		this.url = url;
 	}
 	dispatchSend(html) {
-		console.log(html);
+		console.log(this.url)
 		return axios({
 			method: "POST",
 			url: this.url,
@@ -32,6 +32,7 @@ class Mail {
 				return NotificationManager.error(message, 'Ошибка');
 			}
 		}).catch((err) => {
+			console.log(err)
 			return NotificationManager.error('Ошибка клиента', 'Ошибка');
 		})
 	}

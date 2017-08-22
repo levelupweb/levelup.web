@@ -5,7 +5,6 @@ import './projects.css';
 
 class Project extends React.Component {
   render() {
-    console.log(this.props)
     const { small, project } = this.props;
   	const { id, title, description, image, slug } = project;
     return (
