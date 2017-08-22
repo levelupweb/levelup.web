@@ -1,17 +1,29 @@
 import React from "react";
+import { projects } from '../../db.js'
+import ProjectList from '../../components/projectList/ProjectList.js'
 import "./projects.css";
 
 const Projects = props => {
 	return (
-		<div>
-			<section className="fullpage center">
-				<div className="container">
-					<div className="section-title left">
-						<h4 className="super">Проекты</h4>
-						<p className="description">Реализованные проекты</p>
-					</div>
+		<div className="page-about">
+			<div className="block">
+				<div className="block-title left" id="prices">
+					<h5 className="super title">
+						<div className="anchor">#</div>
+						Наши проекты
+					</h5>
+					<p className="description">Реализованные командой Levelup Web</p>
 				</div>
-			</section>
+			</div>
+			<div className="block">
+				<p className="primary">
+					На данной странице вы сможете найти проекты, которые мы уже успели реализовать{" "}
+					для наших замечательных клиентов
+				</p>
+			</div>
+			<div className="block">
+				<ProjectList small={true} projects={projects} />
+			</div>
 		</div>
 	)
 }

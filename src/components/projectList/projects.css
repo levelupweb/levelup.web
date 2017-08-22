@@ -1,16 +1,23 @@
 .projects {
 	display:flex;
-	justify-content: space-between;
+	justify-content: space-around;
 	align-items: flex-start;
 	flex-wrap:wrap;
 	width:100%;
-	margin-bottom:150px;
 }
+
 .projects .project {
 	max-width:31%;
 	width:31%;
-	min-width:200px;
+	min-width:260px;
 	position: relative;
+	margin-bottom:20px;
+}
+@media screen and (max-width:533px) {
+	.projects .project {
+		min-width:90%;
+		width:90%;
+	}
 }
 .project .project-image {
 	transition: 0.2s all ease;
@@ -42,13 +49,8 @@
 .project .project-image .image-action {
 	opacity:0;
 	position: absolute;
-	left:0px;
-	top:0px;
-	width:100%;
-	height:100%;
-	display:flex;
-	justify-content: center;
-	align-items: center;
+	right:30px;
+	top:30px;
 	transition: 0.2s all ease;
 	z-index:50;
 }
@@ -58,34 +60,45 @@
 .project .project-title {
 	cursor:pointer;
   position: absolute;
-  bottom: -90px;
-  left: -50px;
-  max-width: 200px;
-  padding: 28px;
+  bottom: 25px;
+  left: 25px;
+  max-width: 190px;
   border-radius: 4px;
   text-align: left;
   transition: 0.2s all ease;
-}
-.project:hover .project-title {
-	left:-40px;
-	bottom:-50px;
-	box-shadow: 1px 1px 20px 0px rgba(0, 0, 0, 0.15);
-	background: #fff;
+  z-index:50;
 }
 .project .project-title .title {
 	margin-top:0px;
+	transition: 0.2s all ease;
 }
 .project .project-title .description {
 	color:#777;
-	opacity:0;
 	transition: 0.2s all ease;
 }
-.project:hover .project-title .description {
+.project:hover .project-title .description,
+.project:hover .project-title .title {
 	opacity:1;
+	color:#fff;
 }
 .project:hover .project-image {
 	background:#0012ff;
 }
 .project:hover .project-image img {
 	opacity:0.2;
+}
+/* Modificators */
+.project.small .project-title {
+	left:15px;
+	bottom:15px;
+}
+.project.small .project-title .title  {
+	font-size:20px;
+}
+.project.small .image-border {
+	display:none;
+}
+.project.small .project-image .image-action {
+	top:15px;
+	right:15px;
 }

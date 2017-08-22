@@ -1,0 +1,38 @@
+import axios from "axios";
+import { NotificationManager } from 'react-notifications';
+
+class Mail {
+	constructor(token, who, to, subject, url) {
+		this.token = token;
+		this.who = who;
+		this.to = to;
+		this.subject = subject;
+		this.url = url;
+	}
+	dispatchSend(html) {
+		return axios({
+			method: "POST",
+			url: this.url,
+			headers: {
+				"x-access-token": this.token 
+			},
+			data: {
+				who: this.who,
+				to: this.to,
+				subject: this.subject,
+				html,
+			}
+		}).then((response) => {
+			const { success, message } = response.data;
+			if(success) {
+				return NotificationManager.success(message, 'Успех');
+			} else {
+				return NotificationManager.error(message, 'Ошибка');
+			}
+		}).catch((err) => {
+			return NotificationManager.error('Ошибка клиента', 'Ошибка');
+		})
+	}
+}
+
+export default Mail;
