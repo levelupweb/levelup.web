@@ -13,3 +13,17 @@
 	right:-100px;
 	bottom:-200px;
 }
+@media screen and (max-width:1232px) {
+	.page-music .second .background {
+		padding-top:100px;
+		text-align:center;
+	}
+	.page-music .second .ipad {
+		position: static;
+		width:100%;
+	}
+	.page-music .second .ipad img {
+		width:80%;
+	}
+}
+

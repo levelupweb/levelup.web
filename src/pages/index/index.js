@@ -68,16 +68,6 @@ const initScrollReveal = () => {
 		delay: 200,
 		origin: "top"
 	});
-	sr.reveal(".ipad", {
-		duration: 1000,
-		delay: 0,
-		origin: "bottom"
-	});
-	sr.reveal(".iphone", {
-		duration: 1000,
-		delay: 0,
-		origin: "right"
-	});
 	sr.reveal(".projects .project", {
 		duration: 1000,
 		delay: 600,
