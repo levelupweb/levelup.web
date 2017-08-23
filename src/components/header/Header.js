@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import "./header.css";
 
 const Header = props => 
-	<div className="header">
+	<div className="header block primary">
 		<nav className="navigation">
 			<ul>
 				<Link

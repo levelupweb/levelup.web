@@ -54,7 +54,6 @@ const Contact = props => {
 			<div className="block">
 				<div className="block-title left" id="contact">
 					<h5 className="super title">
-						<div className="anchor">#</div>
 						Контакты
 					</h5>
 					<p className="description">Как с нами связаться</p>

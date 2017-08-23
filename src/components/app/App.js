@@ -24,6 +24,7 @@ const App = props => {
 				transitionName="fade"
 				transitionEnterTimeout={600}
 				transitionLeaveTimeout={600}
+				onUpdate={() => window.scrollTo(0, 0)}
 			>
 				<RouteDefaultContainer exact path="/" component={Index} />
 				<RoutePageContainer path="/about" component={About} />

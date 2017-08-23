@@ -9,17 +9,11 @@ const RoutePageContainer = ({ component }) =>
 	<div className="page-container">
 		<div className="site-content">
 			<div className="container text blocks">
-				<div className="block primary">
-					<Header visible={true} isNotFixed={true} isHorizontal={true} />
-				</div>
+				<Header visible={true} isNotFixed={true} isHorizontal={true} />
 				<Route render={props => 
-					<div className="block">
-						{React.createElement(component)}
-					</div>
+					React.createElement(component)
 				} />
-				<div className="block">
-					<Footer />
-				</div>
+				<Footer />
 			</div>
 		</div>
 	</div>;

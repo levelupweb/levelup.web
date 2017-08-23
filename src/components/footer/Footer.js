@@ -13,10 +13,12 @@ const renderSubscribeForm = () => <SubscribeForm />
 
 const Footer = props =>
 	<div className="footer">
-		<div className="left">
-			Создано в <a href="http://web.levelupworlds.com">Levelup Web</a> с любовью
-		</div>
-		<div className="right">
+		<div className="block">
+			<div className="left">
+				Создано в <a href="http://web.levelupworlds.com">Levelup Web</a> с любовью
+			</div>
+			<div className="right">
+			</div>
 		</div>
 	</div>
 

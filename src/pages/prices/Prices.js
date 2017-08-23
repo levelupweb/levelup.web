@@ -48,7 +48,6 @@ const Prices = props => {
 			<div className="block">
 				<div className="block-title left" id="prices">
 					<h5 className="super title">
-						<div className="anchor">#</div>
 						Услуги и прайс
 					</h5>
 					<p className="description">Какие услуги мы реализуем и сколько это будет стоить</p>

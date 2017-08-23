@@ -9,7 +9,6 @@ const Projects = props => {
 			<div className="block">
 				<div className="block-title left" id="prices">
 					<h5 className="super title">
-						<div className="anchor">#</div>
 						Наши проекты
 					</h5>
 					<p className="description">Реализованные командой Levelup Web</p>

@@ -7,7 +7,6 @@ const About = props => {
 			<div className="block">
 				<div className="block-title left" id="about-us">
 					<h5 className="super title">
-						<div className="anchor">#</div>
 						О команде Levelup Web
 					</h5>
 					<p className="description">Кто мы такие и чем занимаемся?</p>

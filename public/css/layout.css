@@ -30,9 +30,15 @@ section.fullpage {
 	justify-content:center;
 	flex-direction:column;
 	padding:0px 0;
+	overflow-x:hidden;
 }
 section.fullpage .container {
 	margin:70px 0;
+}
+@media screen and (max-width:576px) {
+	section.fullpage .container {
+		margin:30px 0;
+	}
 }
 section .section-background {
 	position: absolute; 
@@ -81,6 +87,8 @@ section .section-title {
 }
 section .section-title .title {
 	margin:0!important;
+	font-weight:bold;
+	
 }
 section .section-title .description {
 	font-size:20px;

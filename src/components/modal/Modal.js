@@ -24,7 +24,14 @@ class Modal extends Component {
 			<div>
 				<div className={isRevealed ? 'Modal open' : 'Modal'}>
 					<div className="Modal-wrapper inverted">
-						<div className="Modal-title"><h1>{title} <small>{description}</small></h1></div>
+						<div className="Modal-closer">
+							<button className="button ghost" onClick={this.reveal}>Закрыть</button>
+						</div>
+						<div className="Modal-title">
+							<div className="block">
+								<h1>{title} <small>{description}</small></h1>
+							</div>
+						</div>
 						<div className="Modal-content">
 							<div className="block">
 								<p>{content}</p>
@@ -32,9 +39,6 @@ class Modal extends Component {
 							<div className="block">
 								<div>{render}</div>
 							</div>
-						</div>
-						<div className="Modal-closer">
-							<button className="button ghost" onClick={this.reveal}>Закрыть</button>
 						</div>
 					</div>
 				</div>

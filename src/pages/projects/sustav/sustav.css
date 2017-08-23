@@ -8,6 +8,13 @@
 	justify-content: space-around;
 	align-items:flex-start;
 }
+@media screen and (max-width:458px) {
+	.page-sustav .second .iphones {
+		flex-direction:column;
+		justify-content: center;
+		align-items: center;
+	}
+}
 .page-sustav .second .iphones .iphone2 {
 	margin-top:50px;
 }
