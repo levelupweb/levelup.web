@@ -105,3 +105,8 @@
 .project.small {
 	min-width:190px!important
 }
+@media screen and (max-width:500px) {
+.project.small {
+	min-width:100%!important;
+}
+}
