@@ -1,0 +1,49 @@
+.page-avantazh .first {
+	background-image: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
+}
+.page-avantazh a {
+	color:#333!important;
+}
+.page-avantazh .second .imac img {
+	position: absolute;
+	left:-199px;
+	bottom:50px;
+	width:600px;
+}
+@media screen and (max-width:1186px) {
+	.page-avantazh .second .imac img {
+		position: static;
+		margin-top:80px;
+	}
+}
+@media screen and (max-width:710px) {
+	.page-avantazh .second .imac img {
+		width:100%;
+	}
+}
+.page-avantazh .third .imac {
+	position: absolute;
+  right: -300px;
+  width: 900px;
+}
+@media screen and (max-width:992px) {
+	.page-avantazh .third .imac {
+		position: absolute;
+	  right: -200px;
+	  bottom:-500px;
+	  width: 600px;
+	}
+}
+@media screen and (max-width:710px) {
+	.page-avantazh .third .background {
+		text-align:center;
+	}
+	.page-avantazh .third .imac {
+		position: static;
+		text-align:center;
+		width:80%;
+	}
+}
+.page-avantazh .fifth {
+	background-image: linear-gradient(-20deg, #e9defa 0%, #fbfcdb 100%);
+}

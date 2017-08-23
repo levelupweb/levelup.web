@@ -17,13 +17,14 @@ class Index extends React.Component {
   render() {
     return (
 			<div>
-				<section className="fullpage center first">
+				<section className="fullpage center first blocks">
 					<div className="background">
 						<img src="/img/intro-1.png" className="ipad" alt="" />
 						<img src="/img/intro-2.png" className="iphone" alt="" />
 					</div>
-					<div className="container text" style={{height: 168 + 'px'}}>
+					<div className="container text" style={{height: 229 + 'px'}}>
 						<div className="jumbotron">
+							<div className="block">
 							<div className="jumbotron-title">
 								<h3 className="super title">
 									<img src="/img/logo-web.png" />
@@ -34,6 +35,7 @@ class Index extends React.Component {
 								<p className="primary">
 									Мы создаём то, что облегачает общение между клиентом и бизнесом. Мы создаём приложения самых разных уровней сложности: от простых продающих страниц до высоконагруженных веб-платформ. 
 								</p>
+							</div>
 							</div>
 						</div>
 					</div>

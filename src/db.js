@@ -1,10 +1,10 @@
 export const projects = [
 	{
 		id: 1,
-		slug: 'montemilli',
-		title: 'Montemilli',
-		description: 'Сайт ювелирного магазина Montemilli',
-		image: '/img/avantazh.png'
+		slug: 'music',
+		title: 'Music',
+		description: 'Сайт музыкального лейбла Levelup Music',
+		image: '/img/levelupmusic.png'
 	},
 	{
 		id: 2,
@@ -18,6 +18,6 @@ export const projects = [
 		slug: 'avantazh',
 		title: 'Avantazh',
 		description: 'Сайт бухгалтерской компании',
-		image: '/img/levelupmusic.png'
+		image: '/img/avantazh.png'
 	}
 ]

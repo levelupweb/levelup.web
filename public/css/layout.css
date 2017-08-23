@@ -1,3 +1,6 @@
+.page {
+	min-height:100vh;
+}
 section {
 	padding:50px 50px;
 	margin:auto;
@@ -88,7 +91,7 @@ section .section-title {
 section .section-title .title {
 	margin:0!important;
 	font-weight:bold;
-	
+
 }
 section .section-title .description {
 	font-size:20px;
@@ -104,7 +107,11 @@ section .section-actions {
 	align-items: center;
 	flex-wrap:wrap;
 	margin-top:50px;
-
+}
+@media screen and (max-width:567px) {
+	section .section-actions {
+		margin-top:25px;
+	}
 }
 section .section-actions > * {
 	display: block;

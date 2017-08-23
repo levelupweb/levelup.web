@@ -50,7 +50,7 @@ const renderSubscribeForm = () => <SubscribeForm />
 
 const Contact = props => {
 	return (
-		<div className="page-about">
+		<div className="page-contact page">
 			<div className="block">
 				<div className="block-title left" id="contact">
 					<h5 className="super title">

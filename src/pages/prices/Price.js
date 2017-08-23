@@ -8,7 +8,7 @@ const Price = props =>
 				<img src={props.price.image} width="50px" alt={props.price.title} />
 			</div>
 			<div className="right">
-				<h4 className="super price-title">{props.price.title}</h4>
+				<h4 className="price-title">{props.price.title}</h4>
 				<p className="price-cost"><strong>от {props.price.cost} руб.</strong></p>
 			</div>
 		</div>

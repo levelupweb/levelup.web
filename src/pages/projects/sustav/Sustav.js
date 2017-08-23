@@ -210,11 +210,10 @@ const Sustav = props => {
 									<h5 className="title super">
 										Хотите заказать себе похожий сайт?
 									</h5>
-									<p className="description">
-										Дайте нам об этом знать!
-									</p>
-									<button style={{marginTop:20+ 'px'}} className="button ghost">Связаться</button>
-								</div>
+										<button style={{marginTop:20+ 'px'}} className="button ghost">
+											<Link to="/contact">Связаться</Link>
+										</button>
+									</div>
 								</div>
 							</div>
 							<div className="col-md-6 col-xs-12" style={{textAlign: 'center'}}>

@@ -3,7 +3,7 @@ import "./about.css";
 
 const About = props => {
 	return (
-		<div className="page-about">
+		<div className="page-about page">
 			<div className="block">
 				<div className="block-title left" id="about-us">
 					<h5 className="super title">

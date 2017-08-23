@@ -5,7 +5,7 @@ import "./projects.css";
 
 const Projects = props => {
 	return (
-		<div className="page-about">
+		<div className="page-projects page">
 			<div className="block">
 				<div className="block-title left" id="prices">
 					<h5 className="super title">

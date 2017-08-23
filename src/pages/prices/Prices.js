@@ -44,7 +44,7 @@ const renderContactForm = () => <ContactForm
 
 const Prices = props => {
 	return (
-		<div className="page-about">
+		<div className="page-prices page">
 			<div className="block">
 				<div className="block-title left" id="prices">
 					<h5 className="super title">

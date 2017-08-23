@@ -10,6 +10,19 @@
 		top:30px;
 	}
 }
+.burger .navigation {
+	margin-top:10px;
+	opacity:0;
+	display:none;
+	visibility: hidden;
+	transition: 0.2s all ease;
+}
+.burger .navigation.revealed {
+	opacity:1.0;
+	left:42px;
+	visibility: visible;
+	display:block;
+}
 .burger .navigation ul {
 	margin:0px;
 	padding:0px;
@@ -36,17 +49,6 @@
 }
 .burger .navigation ul a:last-child {
 	margin-right:0px
-}
-.burger .navigation {
-	margin-top:10px;
-	opacity:0;
-	visibility: hidden;
-	transition: 0.2s all ease;
-}
-.burger .navigation.revealed {
-	opacity:1.0;
-	left:42px;
-	visibility: visible;
 }
 .burger .burger-revealer {
 	cursor:pointer;

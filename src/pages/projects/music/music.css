@@ -1,0 +1,15 @@
+.page-music .first {
+	background-image: linear-gradient(135deg, #333 0%, #000 100%);
+}
+.page-music a {
+	color:#111!important;
+}
+.page-music .first a {
+	color:#fff!important;
+}
+.page-music .second .ipad {
+	position: absolute;
+	width:700px;
+	right:-100px;
+	bottom:-200px;
+}
