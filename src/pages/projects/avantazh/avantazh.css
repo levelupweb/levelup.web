@@ -4,6 +4,9 @@
 .page-avantazh a {
 	color:#333!important;
 }
+.page-avantazh .button a {
+	color:#fff!important;
+}
 .page-avantazh .second .imac img {
 	position: absolute;
 	left:-199px;

@@ -15,10 +15,10 @@ const Avantazh = props => {
 									</div>
 									<div className="section-title">
 										<h4 className="title super">
-											<a href="http://avantazh-expert.com" target="_blank">Avantazh</a>
+											<a href="http://avantazh-expert.com" target="_blank">Avantazh-Expert</a>
 										</h4>
 										<p className="description">
-											<a href="http://avantazh-expert.com" target="_blank" style={{opacity:0.4}}>http://avantazh.com</a>
+											<a href="http://avantazh-expert.com" target="_blank" style={{opacity:0.4}}>http://avantazh-expert.com</a>
 											</p>
 									</div>
 									<div className="section-content">
@@ -187,7 +187,7 @@ const Avantazh = props => {
 										Хотите заказать себе похожий сайт?
 									</h5>
 									<button style={{marginTop:20+ 'px'}} className="button">
-										<Link to="/contact">Связаться</Link>
+										<Link to="/contact"><span style={{color:'#fff!important'}}>Связаться</span></Link>
 									</button>
 								</div>
 								</div>
