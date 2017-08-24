@@ -15,10 +15,10 @@ const Avantazh = props => {
 									</div>
 									<div className="section-title">
 										<h4 className="title super">
-											<a href="http://avantazh.com" target="_blank">Avantazh</a>
+											<a href="http://avantazh-expert.com" target="_blank">Avantazh</a>
 										</h4>
 										<p className="description">
-											<a href="http://avantazh.com" target="_blank" style={{opacity:0.4}}>http://avantazh.com</a>
+											<a href="http://avantazh-expert.com" target="_blank" style={{opacity:0.4}}>http://avantazh.com</a>
 											</p>
 									</div>
 									<div className="section-content">

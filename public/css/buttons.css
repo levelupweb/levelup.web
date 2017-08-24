@@ -51,11 +51,10 @@
 }
 .button.ghost {
 	color:#000;
-	border:0px;
 	background:transparent;
 	outline:none;
 	cursor:pointer;
-	border:1px solid transparent;
+	border:1px solid #eee;
 	transition:0.2s all ease;
 }
 .button.ghost:hover {

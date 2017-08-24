@@ -12,15 +12,15 @@ const Music = props => {
 								<div className="block">
 									<div className="section-title ">
 										<p className="description">
-											<a href="http://levelupmusic.com" style={{opacity:0.4}}>http://levelupmusic.com</a>
+											<a href="http://levelupmusic.ru" style={{opacity:0.4}}>http://levelupmusic.ru</a>
 											</p>
 										<h4 className="title super">
-											<a href="http://levelupmusic.com">Levelup Music</a>
+											<a href="http://levelupmusic.ru">Levelup Music</a>
 										</h4>
 										
 									</div>
 									<div className="section-content">
-										<p className="primary">Интернет-магазин ювелирной продукции под брендом Montemilli<br /></p>
+										<p className="primary">Современный музыкальный лейбл</p>
 									</div>
 								</div>
 							</div>
