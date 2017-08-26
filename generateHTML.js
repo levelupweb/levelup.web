@@ -11,7 +11,8 @@ const generateHTML = (html, helmet) =>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./dist/css/bundle.css" />
     <link rel="stylesheet" href="./dist/static/css/main.7ce1660d.css" />
-
+<meta name="google-site-verification" content="QXUKw1SJVaDalKkjzNQ_hwXrg6poVFqZUhhmYyq6LFk" />
+<meta name="yandex-verification" content="221dd2bb84904410" />
     <link rel="stylesheet" href="./dist/css/flexboxgrid.css" />
     <link rel="shortcut icon" href="./dist/favicon.ico" />
     <link rel="apple-touch-icon" sizes="57x57" href="./dist/favicon/apple-icon-57x57.png">
