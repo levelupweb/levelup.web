@@ -1,5 +1,3 @@
-const serve = require('serve')
-const server = serve(__dirname + '/build', {
-  port: 3100,
-  ignore: ['node_modules']
-})
+require("babel-register")
+require("ignore-styles")
+require("./server.js")

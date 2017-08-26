@@ -1,3 +1,6 @@
+.header {
+	transition:0.2s all ease;
+}
 .header .navigation {
 	border-bottom:1px solid #eee;
 	display:flex;

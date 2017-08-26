@@ -10,19 +10,6 @@
 		top:30px;
 	}
 }
-.burger .navigation {
-	margin-top:10px;
-	opacity:0;
-	display:none;
-	visibility: hidden;
-	transition: 0.2s all ease;
-}
-.burger .navigation.revealed {
-	opacity:1.0;
-	left:42px;
-	visibility: visible;
-	display:block;
-}
 .burger .navigation ul {
 	margin:0px;
 	padding:0px;
@@ -33,8 +20,13 @@
 	color:#000;
 	position:relative;
 }
+@media screen and (max-width:576px) {
+	.burger .navigation ul a li {
+		font-size:22px;
+	}
+}
 .burger .navigation a li:after {
-	width:13px;
+	width:1px;
 	height:13px;
 	background:#000;
 	content: '';
@@ -49,6 +41,17 @@
 }
 .burger .navigation ul a:last-child {
 	margin-right:0px
+}
+.burger .navigation {
+	margin-top:10px;
+	opacity:0;
+	visibility: hidden;
+	transition: 0.2s all ease;
+}
+.burger .navigation.revealed {
+	opacity:1.0;
+	left:42px;
+	visibility: visible;
 }
 .burger .burger-revealer {
 	cursor:pointer;

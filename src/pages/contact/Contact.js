@@ -1,6 +1,7 @@
 import React from "react";
 import ContactForm from '../../components/contactForm/ContactForm.js';
 import Modal from '../../components/modal/Modal.js';
+import { Helmet } from "react-helmet";
 import SubscribeForm from '../../components/subscribeForm/SubscribeForm.js';
 import "./contact.css";
 
@@ -51,6 +52,14 @@ const renderSubscribeForm = () => <SubscribeForm />
 const Contact = props => {
 	return (
 		<div className="page-contact page">
+			<Helmet>
+        <title>Контакты - Levelup Web</title>
+        <meta name="description" content="Контакты Levelup Web. Студия веб-разработок" />
+    		<meta name="keywords" content="веб-разработка, веб агентство, создать веб-приложение, разработка приложений, купить сайт, создать сайт в студии под ключ, сайт под ключ купить" />
+    		<meta name="author" content="Levelup Web" />
+  			<meta name="robots" content="index, follow" />
+  			<meta name="revisit-after" content="1 days" />
+    	</Helmet>
 			<div className="block">
 				<div className="block-title left" id="contact">
 					<h5 className="super title">
@@ -68,7 +77,7 @@ const Contact = props => {
 				<div className="list">
 					<div className="item">
 						<div className="icon">
-							<img src="img/paper-plane.png" alt="Почта"/>
+							<img src="dist/img/paper-plane.png" alt="Почта"/>
 						</div>
 						<div className="content">
 							hh@levelupworlds.com
@@ -76,7 +85,7 @@ const Contact = props => {
 					</div>
 					<div className="item">
 						<div className="icon">
-							<img src="img/placeholder.png" alt="Адрес"/>
+							<img src="dist/img/placeholder.png" alt="Адрес"/>
 						</div>
 						<div className="content">
 							г. Москва, Пресненская наб., 6, стр. 2
@@ -84,7 +93,7 @@ const Contact = props => {
 					</div>
 					<div className="item">
 						<div className="icon">
-							<img src="img/smartphone.png" alt="Мобильный телефон"/>
+							<img src="dist/img/smartphone.png" alt="Мобильный телефон"/>
 						</div>
 						<div className="content">
 							(903) 634-69-29

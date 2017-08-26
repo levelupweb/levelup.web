@@ -1,17 +1,26 @@
 import React from "react";
 import { Link } from 'react-router-dom'
+import { Helmet } from "react-helmet";
 import "./sustav.css";
 
 const Sustav = props => {
 	return (
 		<div className="page-sustav blocks">
+			<Helmet>
+        <title>Проект "Sustav Pro"</title>
+        <meta name="description" content="Кейс к проекту Sustav Pro. Студия веб-разработок Levelup Web" />
+    		<meta name="keywords" content="Алесандр Ветошкин, суставы, артроскопия, веб-разработка, веб агентство, создать веб-приложение, разработка приложений, купить сайт, создать сайт в студии под ключ, сайт под ключ купить" />
+    		<meta name="author" content="Levelup Web" />
+  			<meta name="robots" content="index, follow" />
+  			<meta name="revisit-after" content="1 days" />
+    	</Helmet>
 			<section className="fullpage text first">
 					<div className="container text">
 						<div className="row">
 							<div className="col-xs-12">
 								<div className="block">
 									<div className="section-content">
-										<img src="img/sustav-main.png" width="100%" alt=""/>
+										<img src="dist/img/sustav-main.png" width="100%" alt=""/>
 									</div>
 									<div className="section-title">
 										<h4 className="title super">
@@ -61,8 +70,8 @@ const Sustav = props => {
 								<div className="col-md-6 col-xs-12" style={{textAlign: 'right'}}>
 									<div className="block">
 										<div className="iphones">
-											<img src="img/sustav-iphone.png" className="iphone1" alt="Sustav" width="180px" />
-											<img src="img/sustav-iphone1.png" className="iphone2" alt="Sustav" width="200px" />
+											<img src="dist/img/sustav-iphone.png" className="iphone1" alt="Sustav" width="180px" />
+											<img src="dist/img/sustav-iphone1.png" className="iphone2" alt="Sustav" width="200px" />
 										</div>
 									</div>
 								</div>
@@ -72,7 +81,7 @@ const Sustav = props => {
 				</section>
 				<section className="fullpage third">
 					<div className="background">
-						<img src="img/wtf.png" className="imac" />
+						<img src="dist/img/wtf.png" className="imac" />
 					</div>
 					<div className="container">
 						<div className="section-content">
@@ -172,7 +181,7 @@ const Sustav = props => {
 									<div className="statistics">
 										<div className="statistic" >
 											<div className="number">
-												<img src="img/mongodb.png" alt="Mongodb"/>
+												<img src="dist/img/mongodb.png" alt="Mongodb"/>
 											</div>
 											<div className="title">
 												Mongodb в качестве сервера баз данных
@@ -180,7 +189,7 @@ const Sustav = props => {
 										</div>
 										<div className="statistic">
 											<div className="number">
-												<img src="img/react.png" alt="React"/>
+												<img src="dist/img/react.png" alt="React"/>
 											</div>
 											<div className="title">
 												React в качестве View-прослойки и UI-генератора
@@ -188,7 +197,7 @@ const Sustav = props => {
 										</div>
 										<div className="statistic">
 											<div className="number">
-												<img src="img/graphql.png" alt="GraphQL"/>
+												<img src="dist/img/graphql.png" alt="GraphQL"/>
 											</div>
 											<div className="title">
 												GraphQL в качестве Model-прослойки

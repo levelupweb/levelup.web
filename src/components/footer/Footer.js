@@ -1,25 +1,31 @@
-import React from 'react';
-import Field from '../field/Field.js';
-import Modal from '../modal/Modal.js';
-import SubscribeForm from '../subscribeForm/SubscribeForm.js';
-import './footer.css';
+import React, { Component } from 'react';
+import './footer.css'
 
-const subscribeModalConfiguration = {
-	title: 'Извините, в данный момент рассылка недоступна',
-	description: 'Но скоро всё обязательно вернётся! :)',
+export default class Footer extends Component {
+	render() {
+		if(!this.props.page) {
+			return (
+				<div className="footer">
+					<div className="footer-wrapper">
+						<p className="spacing">Создано с любовью в Levelup Web</p>
+					</div>
+				</div>
+			);
+		} else {
+			return (
+				<div className="block">
+					<div className="footer onPage">
+						<div className="footer-wrapper">
+							<div className="left">
+								Создано в <a href="http://web.levelupworlds.com">Levelup Web</a> с любовью
+							</div>
+							<div className="right">
+							</div>
+						</div>
+					</div>
+				</div>
+			)
+		}
+	}
 }
 
-const renderSubscribeForm = () => <SubscribeForm />
-
-const Footer = props =>
-	<div className="footer">
-		<div className="block">
-			<div className="left">
-				Создано в <a href="http://web.levelupworlds.com">Levelup Web</a> с любовью
-			</div>
-			<div className="right">
-			</div>
-		</div>
-	</div>
-
-export default Footer

@@ -4,20 +4,20 @@ export const projects = [
 		slug: 'music',
 		title: 'Music',
 		description: 'Сайт музыкального лейбла Levelup Music',
-		image: '/img/levelupmusic.png'
+		image: 'dist/img/levelupmusic.png'
 	},
 	{
 		id: 2,
 		slug: 'sustav',
 		title: 'Sustav',
 		description: 'Сайт врача-травматолога Александра Ветошкина',
-		image: '/img/sustav.png'
+		image: 'dist/img/sustav.png'
 	},
 	{
 		id: 3,
 		slug: 'avantazh',
 		title: 'Avantazh',
 		description: 'Сайт бухгалтерской компании',
-		image: '/img/avantazh.png'
+		image: 'dist/img/avantazh.png'
 	}
 ]

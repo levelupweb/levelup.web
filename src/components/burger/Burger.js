@@ -27,7 +27,7 @@ class Burger extends Component {
 			<div className="burger">
 				<p className="burger-revealer spacing"
 					onClick={() => { this.revealNavigation() }}>
-					{revealed ? "Закрыть меню" : "Открыть меню"}
+					{revealed ? "Закрыть" : "Открыть меню"}
 				</p>
 				<nav className={revealed ? "navigation revealed" : "navigation"}>
 					<ul>

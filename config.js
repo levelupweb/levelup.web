@@ -3,7 +3,11 @@ export default new function() {
 
 	this.dev = false;
 	this.ssl = false;
+	this.port = "3100";
+	this.staticFolder = "/dist"
 	this.type = this.ssl ? "https://" : "http://";
+	this.domain = this.type + "web.levelupworlds.com";
+	this.staticURL = this.domain + this.staticFolder;
 	this.host = "185.22.232.114";
 	this.hosturl = this.type + this.host;
 	this.mail = new function() {

@@ -1,9 +1,18 @@
 import React from "react";
+import { Helmet } from "react-helmet";
 import "./about.css";
 
 const About = props => {
 	return (
 		<div className="page-about page">
+			<Helmet>
+        <title>О нас - Levelup Web</title>
+        <meta name="description" content="О компании Levelup Web. Студия веб-разработок" />
+    		<meta name="keywords" content="веб-разработка, веб агентство, создать веб-приложение, разработка приложений, купить сайт, создать сайт в студии под ключ, сайт под ключ купить" />
+    		<meta name="author" content="Levelup Web" />
+  			<meta name="robots" content="index, follow" />
+  			<meta name="revisit-after" content="1 days" />
+    	</Helmet>
 			<div className="block">
 				<div className="block-title left" id="about-us">
 					<h5 className="super title">
@@ -23,7 +32,7 @@ const About = props => {
 				<div className="statistics">
 					<div className="statistic">
 						<div className="number">
-							<img src="img/development-icons.png" alt="Разработка мобильных приложений"/>
+							<img src="dist/img/development-icons.png" alt="Разработка мобильных приложений"/>
 						</div>
 						<div className="title">
 							Разработка мобильных приложений
@@ -31,7 +40,7 @@ const About = props => {
 					</div>
 					<div className="statistic">
 						<div className="number">
-							<img src="img/laptop.png" alt="Разработка сайтов и интернет-магазинов"/>
+							<img src="dist/img/laptop.png" alt="Разработка сайтов и интернет-магазинов"/>
 						</div>
 						<div className="title">
 							Разработка сайтов и интернет-магазинов
@@ -39,7 +48,7 @@ const About = props => {
 					</div>
 					<div className="statistic">
 						<div className="number">
-							<img src="img/cloud-computing.png" alt="Разработка облачных решений"/>
+							<img src="dist/img/cloud-computing.png" alt="Разработка облачных решений"/>
 						</div>
 						<div className="title">
 							Разработка облачных решений

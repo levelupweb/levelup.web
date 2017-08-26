@@ -1,10 +1,19 @@
 import React from "react";
 import { Link } from 'react-router-dom'
+import { Helmet } from "react-helmet";
 import "./music.css";
 
 const Music = props => {
 	return (
 		<div className="page-music blocks">
+			<Helmet>
+        <title>Проект "Levelup Music"</title>
+        <meta name="description" content="Кейс к проекту Levelup Music. Студия веб-разработок Levelup Web" />
+    		<meta name="keywords" content="музыкальный лейбл, кейс, веб-разработка, веб агентство, создать веб-приложение, разработка приложений, купить сайт, создать сайт в студии под ключ, сайт под ключ купить" />
+    		<meta name="author" content="Levelup Web" />
+  			<meta name="robots" content="index, follow" />
+  			<meta name="revisit-after" content="1 days" />
+    	</Helmet>
 			<section className="fullpage text first inverted">
 					<div className="container text">
 						<div className="row">
@@ -30,7 +39,7 @@ const Music = props => {
 				<section className="fullpage text second">
 					<div className="background">
 						<div className="ipad">
-							<img src="img/music-ipad.png" width="100%" alt=""/>
+							<img src="dist/img/music-ipad.png" width="100%" alt=""/>
 						</div>
 					</div>
 					<div className="container">
@@ -84,7 +93,7 @@ const Music = props => {
 									<div className="statistics">
 										<div className="statistic" >
 											<div className="number">
-												<img src="img/html5.png" alt="HTML5"/>
+												<img src="dist/img/html5.png" alt="HTML5"/>
 											</div>
 											<div className="title">
 												HTML5 в качестве более качественной семантической разметки
@@ -92,7 +101,7 @@ const Music = props => {
 										</div>
 										<div className="statistic">
 											<div className="number">
-												<img src="img/react.png" alt="React"/>
+												<img src="dist/img/react.png" alt="React"/>
 											</div>
 											<div className="title">
 												React в качестве View-прослойки и UI-генератора
@@ -100,7 +109,7 @@ const Music = props => {
 										</div>
 										<div className="statistic">
 											<div className="number">
-												<img src="img/redux.png" alt="Redux"/>
+												<img src="dist/img/redux.png" alt="Redux"/>
 											</div>
 											<div className="title">
 												Redux в качестве единого хранилища состояния приложения

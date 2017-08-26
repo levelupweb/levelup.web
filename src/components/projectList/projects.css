@@ -12,11 +12,13 @@
 	min-width:260px;
 	position: relative;
 	margin-bottom:20px;
+	min-height:100px;
+	background:#eee;
 }
 @media screen and (max-width:533px) {
 	.projects .project {
-		min-width:90%;
-		width:90%;
+		min-width:100%;
+		width:100%;
 	}
 }
 .project .project-image {

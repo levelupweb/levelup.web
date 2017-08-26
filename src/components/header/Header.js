@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import "./header.css";
 
+
 const Header = props => 
 	<div className="header block">
 		<nav className="navigation">
@@ -28,7 +29,7 @@ const Header = props =>
 			</ul>
 			<ul className="header-logo">
 				<Link to="/">
-					<img src="img/logo-default.png" alt="Levelup Web"/>
+					<img src="dist/img/logo-default.png" alt="Levelup Web"/>
 				</Link>
 			</ul>	
 		</nav>

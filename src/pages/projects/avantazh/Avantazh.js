@@ -1,17 +1,26 @@
 import React from "react";
 import { Link } from 'react-router-dom'
+import { Helmet } from "react-helmet";
 import "./avantazh.css";
 
 const Avantazh = props => {
 	return (
 		<div className="page-avantazh blocks">
+			<Helmet>
+        <title>Проект "Авантаж-Эксперт"</title>
+        <meta name="description" content="Кейс к проекту Авантаж-Эксперт. Студия веб-разработок Levelup Web" />
+    		<meta name="keywords" content="авантаж, бухгалтерские услуги, веб-разработка, веб агентство, создать веб-приложение, разработка приложений, купить сайт, создать сайт в студии под ключ, сайт под ключ купить" />
+    		<meta name="author" content="Levelup Web" />
+  			<meta name="robots" content="index, follow" />
+  			<meta name="revisit-after" content="1 days" />
+    	</Helmet>
 			<section className="fullpage text first">
 					<div className="container text">
 						<div className="row">
 							<div className="col-xs-12">
 								<div className="block">
 									<div className="section-content">
-										<img src="img/avantazh-main.png" width="100%" alt="Avantazh Expert"/>
+										<img src="./dist/img/avantazh-main.png" width="100%" alt="Avantazh Expert"/>
 									</div>
 									<div className="section-title">
 										<h4 className="title super">
@@ -31,7 +40,7 @@ const Avantazh = props => {
 				</section>
 				<section className="fullpage text second">
 					<div className="imac">
-						<img src="img/avantazh-mockup.png" alt="Avantazh-Expert.com"/>
+						<img src="./dist/img/avantazh-mockup.png" alt="Avantazh-Expert.com"/>
 					</div>
 					<div className="container">
 						<div className="section-content">
@@ -67,7 +76,7 @@ const Avantazh = props => {
 				</section>
 				<section className="fullpage third">
 					<div className="background">
-						<img src="img/avantazh-imac-1.png" className="imac" alt="Avantazh-Export" />
+						<img src="./dist/img/avantazh-imac-1.png" className="imac" alt="Avantazh-Export" />
 					</div>
 					<div className="container">
 						<div className="section-content">
@@ -148,7 +157,7 @@ const Avantazh = props => {
 									<div className="statistics">
 										<div className="statistic" >
 											<div className="number">
-												<img src="img/redux.png" alt="Redux"/>
+												<img src="./dist/img/redux.png" alt="Redux"/>
 											</div>
 											<div className="title">
 												Redux в качестве менеджера состояний приложения
@@ -156,7 +165,7 @@ const Avantazh = props => {
 										</div>
 										<div className="statistic">
 											<div className="number">
-												<img src="img/react.png" alt="React"/>
+												<img src="./dist/img/react.png" alt="React"/>
 											</div>
 											<div className="title">
 												React в качестве View-прослойки и UI-генератора
@@ -164,7 +173,7 @@ const Avantazh = props => {
 										</div>
 										<div className="statistic">
 											<div className="number">
-												<img src="img/rest.png" alt="Express"/>
+												<img src="./dist/img/rest.png" alt="Express"/>
 											</div>
 											<div className="title">
 												Express в качестве REST API сервера

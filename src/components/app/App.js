@@ -1,6 +1,6 @@
 import React from "react";
-import SwitchCSSTransitionGroup from "switch-css-transition-group";
 import { withRouter } from "react-router";
+import { Switch } from 'react-router-dom'
 
 // components
 import Index from "../../pages/index/index.js";
@@ -19,11 +19,9 @@ const App = props => {
 	const { location } = props;
 	return (
 		<div className="App">
-			<SwitchCSSTransitionGroup
+			<Switch
 				location={location}
-				transitionName="fade"
-				transitionEnterTimeout={600}
-				transitionLeaveTimeout={600}
+				key={location.key}
 				onUpdate={() => window.scrollTo(0, 0)}
 			>
 				<RouteDefaultContainer exact path="/" component={Index} />
@@ -35,7 +33,7 @@ const App = props => {
 				<RouteDefaultContainer path="/music" component={Music} />
 				<RouteDefaultContainer path="/avantazh" component={Avantazh} />
 				<RouteDefaultContainer component={notFound} />
-			</SwitchCSSTransitionGroup>
+			</Switch>
 		</div>
 	);
 };

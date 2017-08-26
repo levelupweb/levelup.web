@@ -2,7 +2,7 @@ import React from 'react';
 import Field from '../field/Field.js';
 import axios from 'axios';
 import Mail from '../../services/mail.js'
-import config from '../../config.js'
+import config from '../../../config.js'
 import generateMailHTML from '../../templates/mail.js'
 import { NotificationContainer } from 'react-notifications';
 import "./contactForm.css"
@@ -18,6 +18,9 @@ class ContactForm extends React.Component {
 			'Новая заявка на сайте Levelup.Web',
 			config.mail.sendURL
 		);
+		this.updateForm = this.updateForm.bind(this);
+		this.submitForm = this.submitForm.bind(this);
+		this.renderFields = this.renderFields.bind(this);
 		this.state = {
 			message: {}
 		}
@@ -32,7 +35,7 @@ class ContactForm extends React.Component {
 			hidden={item.hidden || false} />
 		)
 	}
-	updateForm = (key, fieldName, value) => {
+	updateForm(key, fieldName, value) {
 		this.setState({
 			message: {
 				...this.state.message,
