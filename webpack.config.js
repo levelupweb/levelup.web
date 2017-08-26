@@ -1,6 +1,5 @@
 var webpack = require('webpack');
 var path = require('path');
-var WatchLiveReloadPlugin = require('webpack-watch-livereload-plugin');
 
 module.exports = {
   entry: './src/index.js',
