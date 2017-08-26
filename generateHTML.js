@@ -1,6 +1,6 @@
 const generateHTML = (html, helmet) => 
 `<!DOCTYPE html>
-<html lang="ru">
+  <html lang="ru">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
@@ -11,8 +11,8 @@ const generateHTML = (html, helmet) =>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./dist/css/bundle.css" />
     <link rel="stylesheet" href="./dist/static/css/main.7ce1660d.css" />
-<meta name="google-site-verification" content="QXUKw1SJVaDalKkjzNQ_hwXrg6poVFqZUhhmYyq6LFk" />
-<meta name="yandex-verification" content="221dd2bb84904410" />
+    <meta name="google-site-verification" content="QXUKw1SJVaDalKkjzNQ_hwXrg6poVFqZUhhmYyq6LFk" />
+    <meta name="yandex-verification" content="221dd2bb84904410" />
     <link rel="stylesheet" href="./dist/css/flexboxgrid.css" />
     <link rel="shortcut icon" href="./dist/favicon.ico" />
     <link rel="apple-touch-icon" sizes="57x57" href="./dist/favicon/apple-icon-57x57.png">
@@ -44,6 +44,7 @@ const generateHTML = (html, helmet) =>
     </noscript>
     <div id="root"></div>
     <script src="./dist/bundle.js"></script>
+    <script type="text/javascript">(function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter45749268 = new Ya.Metrika({ id:45749268, clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true, trackHash:true }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks"); </script> <noscript><div><img src="https://mc.yandex.ru/watch/45749268" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
   </body>
 </html>
 `

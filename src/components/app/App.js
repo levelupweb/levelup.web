@@ -33,7 +33,7 @@ const App = props => {
 				<RouteDefaultContainer path="/music" component={Music} />
 				<RouteDefaultContainer path="/avantazh" component={Avantazh} />
 				<RouteDefaultContainer component={notFound} />
-			</Switch>
+			</Switch>			
 		</div>
 	);
 };
