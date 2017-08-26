@@ -25,6 +25,11 @@ class Index extends React.Component {
     			<meta name="author" content="Levelup Web" />
     			<meta name="robots" content="index, follow" />
     			<meta name="revisit-after" content="1 days" />
+    			<meta property="og:type" content="website" />
+    			<meta property="og:site_name" content="Levelup Web" />
+    			<meta property="og:title" content="Levelup Web Project" />
+    			<meta property="og:description" content="Levelup Web - студия полного цикла. Студия веб-разработок" />
+    			<meta property="og:url" content="http://web.levelupworlds.com/" />
     		</Helmet>
 				<section className="fullpage center first blocks">
 					<div className="background">

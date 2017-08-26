@@ -29,6 +29,10 @@ const generateHTML = (html, helmet) =>
     <link rel="icon" type="image/png" sizes="16x16" href="./dist/favicon/favicon-16x16.png">
     ${helmet.title.toString()}
     ${helmet.meta.toString()}
+    <meta property="og:locale" content="ru_RU">
+    <meta property="og:image" content="http://web.levelupworlds.com/dist/img/opengraphimage.png">
+    <meta property="og:image:width" content="968">
+    <meta property="og:image:height" content="504">
   </head>
   <body>
     <noscript>

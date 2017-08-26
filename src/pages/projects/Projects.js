@@ -14,9 +14,14 @@ const Projects = props => {
     		<meta name="author" content="Levelup Web" />
   			<meta name="robots" content="index, follow" />
   			<meta name="revisit-after" content="1 days" />
+  			<meta property="og:type" content="website" />
+  			<meta property="og:site_name" content="Levelup Web" />
+  			<meta property="og:title" content="Проекты - Levelup Web Project" />
+  			<meta property="og:description" content="Наши проекты. Студия веб-разработок" />
+  			<meta property="og:url" content="http://web.levelupworlds.com/projects" />
     	</Helmet>
 			<div className="block">
-				<div className="block-title left" id="prices">
+				<div className="block-title left" id="projects">
 					<h5 className="super title">
 						Наши проекты
 					</h5>

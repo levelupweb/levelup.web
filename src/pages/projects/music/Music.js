@@ -13,6 +13,11 @@ const Music = props => {
     		<meta name="author" content="Levelup Web" />
   			<meta name="robots" content="index, follow" />
   			<meta name="revisit-after" content="1 days" />
+  			<meta property="og:type" content="website" />
+  			<meta property="og:site_name" content="Levelup Web" />
+  			<meta property="og:title" content="Проект Levelup Music - Levelup Web Project" />
+  			<meta property="og:description" content="Кейс к проекту Levelup Music. Студия веб-разработок" />
+  			<meta property="og:url" content="http://web.levelupworlds.com/music" />
     	</Helmet>
 			<section className="fullpage text first inverted">
 					<div className="container text">

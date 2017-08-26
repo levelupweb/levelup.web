@@ -53,6 +53,11 @@ const Prices = props => {
     		<meta name="author" content="Levelup Web" />
   			<meta name="robots" content="index, follow" />
   			<meta name="revisit-after" content="1 days" />
+  			<meta property="og:type" content="website" />
+  			<meta property="og:site_name" content="Levelup Web" />
+  			<meta property="og:title" content="Цены - Levelup Web Project" />
+  			<meta property="og:description" content="Цены на разработку. Студия веб-разработок" />
+  			<meta property="og:url" content="http://web.levelupworlds.com/prices" />
     	</Helmet>
 			<div className="block">
 				<div className="block-title left" id="prices">
