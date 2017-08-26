@@ -224,9 +224,11 @@ const Sustav = props => {
 									<h5 className="title super">
 										Хотите заказать себе похожий сайт?
 									</h5>
-										<button style={{marginTop:20+ 'px'}} className="button ghost">
-											<Link to="/contact">Написать нам</Link>
-										</button>
+										<Link to="/contact">
+											<button style={{marginTop:20+ 'px'}} className="button ghost">
+												Написать нам
+											</button>
+										</Link>
 									</div>
 								</div>
 							</div>

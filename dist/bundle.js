@@ -36470,11 +36470,11 @@ var Sustav = function Sustav(props) {
 									"\u0425\u043E\u0442\u0438\u0442\u0435 \u0437\u0430\u043A\u0430\u0437\u0430\u0442\u044C \u0441\u0435\u0431\u0435 \u043F\u043E\u0445\u043E\u0436\u0438\u0439 \u0441\u0430\u0439\u0442?"
 								),
 								_react2.default.createElement(
-									"button",
-									{ style: { marginTop: 20 + 'px' }, className: "button ghost" },
+									_reactRouterDom.Link,
+									{ to: "/contact" },
 									_react2.default.createElement(
-										_reactRouterDom.Link,
-										{ to: "/contact" },
+										"button",
+										{ style: { marginTop: 20 + 'px' }, className: "button ghost" },
 										"\u041D\u0430\u043F\u0438\u0441\u0430\u0442\u044C \u043D\u0430\u043C"
 									)
 								)
@@ -36956,11 +36956,11 @@ var Avantazh = function Avantazh(props) {
 									"\u0425\u043E\u0442\u0438\u0442\u0435 \u0437\u0430\u043A\u0430\u0437\u0430\u0442\u044C \u0441\u0435\u0431\u0435 \u043F\u043E\u0445\u043E\u0436\u0438\u0439 \u0441\u0430\u0439\u0442?"
 								),
 								_react2.default.createElement(
-									"button",
-									{ style: { marginTop: 20 + 'px' }, className: "button" },
+									_reactRouterDom.Link,
+									{ to: "/contact" },
 									_react2.default.createElement(
-										_reactRouterDom.Link,
-										{ to: "/contact" },
+										"button",
+										{ style: { marginTop: 20 + 'px' }, className: "button" },
 										_react2.default.createElement(
 											"span",
 											{ style: { color: '#fff!important' } },
@@ -37326,11 +37326,11 @@ var Music = function Music(props) {
 									"\u0425\u043E\u0442\u0438\u0442\u0435 \u0437\u0430\u043A\u0430\u0437\u0430\u0442\u044C \u0441\u0435\u0431\u0435 \u043F\u043E\u0445\u043E\u0436\u0438\u0439 \u0441\u0430\u0439\u0442?"
 								),
 								_react2.default.createElement(
-									"button",
-									{ style: { marginTop: 20 + 'px' }, className: "button" },
+									_reactRouterDom.Link,
+									{ to: "/contact" },
 									_react2.default.createElement(
-										_reactRouterDom.Link,
-										{ to: "/contact" },
+										"button",
+										{ style: { marginTop: 20 + 'px' }, className: "button" },
 										"\u041D\u0430\u043F\u0438\u0441\u0430\u0442\u044C \u043D\u0430\u043C"
 									)
 								)

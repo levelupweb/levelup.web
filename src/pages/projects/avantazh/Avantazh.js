@@ -200,9 +200,11 @@ const Avantazh = props => {
 									<h5 className="title super">
 										Хотите заказать себе похожий сайт?
 									</h5>
-									<button style={{marginTop:20+ 'px'}} className="button">
-										<Link to="/contact"><span style={{color:'#fff!important'}}>Написать нам</span></Link>
-									</button>
+									<Link to="/contact">
+										<button style={{marginTop:20+ 'px'}} className="button">
+											<span style={{color:'#fff!important'}}>Написать нам</span>
+										</button>
+									</Link>
 								</div>
 								</div>
 							</div>

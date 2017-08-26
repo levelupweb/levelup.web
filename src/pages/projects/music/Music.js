@@ -136,9 +136,11 @@ const Music = props => {
 									<h5 className="title super">
 										Хотите заказать себе похожий сайт?
 									</h5>
-									<button style={{marginTop:20+ 'px'}} className="button">
-										<Link to="/contact">Написать нам</Link>
-									</button>
+									<Link to="/contact">
+										<button style={{marginTop:20+ 'px'}} className="button">
+											Написать нам
+										</button>
+									</Link>
 								</div>
 								</div>
 							</div>
