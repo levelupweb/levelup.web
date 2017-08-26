@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 import ProjectList from '../../components/projectList/ProjectList.js';
 import { projects } from '../../db.js';
 import { Helmet } from "react-helmet";
+import Socials from '../../components/socials/Socials.js'
 import "./index.css";
 
 class Index extends React.Component {
@@ -50,6 +51,9 @@ class Index extends React.Component {
 									Мы создаём то, что облегачает общение между клиентом и бизнесом. Мы создаём приложения самых разных уровней сложности: от простых продающих страниц до высоконагруженных веб-платформ. 
 								</p>
 							</div>
+							</div>
+							<div className="block">
+								<Socials />
 							</div>
 						</div>
 					</div>

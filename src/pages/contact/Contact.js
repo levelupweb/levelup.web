@@ -2,6 +2,7 @@ import React from "react";
 import ContactForm from '../../components/contactForm/ContactForm.js';
 import Modal from '../../components/modal/Modal.js';
 import { Helmet } from "react-helmet";
+import Socials from '../../components/socials/Socials.js'
 import SubscribeForm from '../../components/subscribeForm/SubscribeForm.js';
 import "./contact.css";
 
@@ -78,6 +79,7 @@ const Contact = props => {
 					У вас есть деловое предложение? Свяжитесь с нами при помощи любого доступного вам способа, используя нашу контактную информацию
 				</p>
 			</div>
+			
 			<div className="block">
 				<div className="list">
 					<div className="item">
@@ -105,6 +107,9 @@ const Contact = props => {
 						</div>
 					</div>
 				</div>
+			</div>
+			<div className="block">
+				<Socials />
 			</div>
 			<div className="block">
 				<div className="button-group">

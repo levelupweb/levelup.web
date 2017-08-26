@@ -14950,7 +14950,11 @@ var _react = __webpack_require__(1);
 
 var _react2 = _interopRequireDefault(_react);
 
-__webpack_require__(439);
+var _Socials = __webpack_require__(439);
+
+var _Socials2 = _interopRequireDefault(_Socials);
+
+__webpack_require__(440);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -15000,7 +15004,11 @@ var Footer = function (_Component) {
 								),
 								' \u0441 \u043B\u044E\u0431\u043E\u0432\u044C\u044E'
 							),
-							_react2.default.createElement('div', { className: 'right' })
+							_react2.default.createElement(
+								'div',
+								{ className: 'right' },
+								_react2.default.createElement(_Socials2.default, null)
+							)
 						)
 					)
 				);
@@ -30481,7 +30489,7 @@ var _RouteDefaultContainer = __webpack_require__(435);
 
 var _RouteDefaultContainer2 = _interopRequireDefault(_RouteDefaultContainer);
 
-var _RoutePageContainer = __webpack_require__(443);
+var _RoutePageContainer = __webpack_require__(444);
 
 var _RoutePageContainer2 = _interopRequireDefault(_RoutePageContainer);
 
@@ -30563,6 +30571,10 @@ var _db = __webpack_require__(153);
 
 var _reactHelmet = __webpack_require__(31);
 
+var _Socials = __webpack_require__(439);
+
+var _Socials2 = _interopRequireDefault(_Socials);
+
 __webpack_require__(350);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
@@ -30643,6 +30655,11 @@ var Index = function (_React$Component) {
 										'\u041C\u044B \u0441\u043E\u0437\u0434\u0430\u0451\u043C \u0442\u043E, \u0447\u0442\u043E \u043E\u0431\u043B\u0435\u0433\u0430\u0447\u0430\u0435\u0442 \u043E\u0431\u0449\u0435\u043D\u0438\u0435 \u043C\u0435\u0436\u0434\u0443 \u043A\u043B\u0438\u0435\u043D\u0442\u043E\u043C \u0438 \u0431\u0438\u0437\u043D\u0435\u0441\u043E\u043C. \u041C\u044B \u0441\u043E\u0437\u0434\u0430\u0451\u043C \u043F\u0440\u0438\u043B\u043E\u0436\u0435\u043D\u0438\u044F \u0441\u0430\u043C\u044B\u0445 \u0440\u0430\u0437\u043D\u044B\u0445 \u0443\u0440\u043E\u0432\u043D\u0435\u0439 \u0441\u043B\u043E\u0436\u043D\u043E\u0441\u0442\u0438: \u043E\u0442 \u043F\u0440\u043E\u0441\u0442\u044B\u0445 \u043F\u0440\u043E\u0434\u0430\u044E\u0449\u0438\u0445 \u0441\u0442\u0440\u0430\u043D\u0438\u0446 \u0434\u043E \u0432\u044B\u0441\u043E\u043A\u043E\u043D\u0430\u0433\u0440\u0443\u0436\u0435\u043D\u043D\u044B\u0445 \u0432\u0435\u0431-\u043F\u043B\u0430\u0442\u0444\u043E\u0440\u043C.'
 									)
 								)
+							),
+							_react2.default.createElement(
+								'div',
+								{ className: 'block' },
+								_react2.default.createElement(_Socials2.default, null)
 							)
 						)
 					)
@@ -30847,7 +30864,7 @@ exports = module.exports = __webpack_require__(8)(undefined);
 
 
 // module
-exports.push([module.i, ".projects {\n\tdisplay:flex;\n\tjustify-content: space-around;\n\talign-items: flex-start;\n\tflex-wrap:wrap;\n\twidth:100%;\n}\n\n.projects .project {\n\tmax-width:31%;\n\twidth:31%;\n\tmin-width:260px;\n\tposition: relative;\n\tmargin-bottom:20px;\n\tmin-height:100px;\n\tbackground:#eee;\n}\n@media screen and (max-width:533px) {\n\t.projects .project {\n\t\tmin-width:100%;\n\t\twidth:100%;\n\t}\n}\n.project .project-image {\n\ttransition: 0.2s all ease;\n\tposition: relative;\n\twidth:100%;\n\theight:100%;\n\toverflow:hidden;\n}\n.project .project-image img {\n\ttransition: 0.2s all ease;\n}\n.project .project-image .image-border {\n\twidth:90%;\n\theight:90%;\n\tborder:1px solid rgba(255,255,255,0.3);\n\tbackground: transparent;\n\tposition: absolute;\n\tleft:5%;\n\ttop:5%;\n\ttransition: 0.2s all ease;\n\topacity:0;\n\ttransform:scale(0.9);\n\tz-index:40;\n}\n.project:hover .project-image .image-border {\n\ttransform:scale(1);\n\topacity:1;\n}\n.project .project-image .image-action {\n\topacity:0;\n\tposition: absolute;\n\tright:30px;\n\ttop:30px;\n\ttransition: 0.2s all ease;\n\tz-index:50;\n}\n.project:hover .project-image .image-action {\n\topacity:1;\n}\n.project .project-title {\n\tcursor:pointer;\n  position: absolute;\n  bottom: 25px;\n  left: 25px;\n  max-width: 190px;\n  border-radius: 4px;\n  text-align: left;\n  transition: 0.2s all ease;\n  z-index:50;\n}\n.project .project-title .title {\n\tmargin-top:0px;\n\ttransition: 0.2s all ease;\n}\n.project .project-title .description {\n\tcolor:#777;\n\ttransition: 0.2s all ease;\n}\n.project:hover .project-title .description,\n.project:hover .project-title .title {\n\topacity:1;\n\tcolor:#fff;\n}\n.project:hover .project-image {\n\tbackground:#0012ff;\n}\n.project:hover .project-image img {\n\topacity:0.2;\n}\n/* Modificators */\n.project.small .project-title {\n\tleft:15px;\n\tbottom:15px;\n}\n.project.small .project-title .title  {\n\tfont-size:20px;\n}\n.project.small .image-border {\n\tdisplay:none;\n}\n.project.small .project-image .image-action {\n\ttop:15px;\n\tright:15px;\n}\n.project.small {\n\tmin-width:190px!important\n}\n@media screen and (max-width:500px) {\n.project.small {\n\tmin-width:100%!important;\n}\n}\n", ""]);
+exports.push([module.i, ".projects {\r\n\tdisplay:flex;\r\n\tjustify-content: space-around;\r\n\talign-items: flex-start;\r\n\tflex-wrap:wrap;\r\n\twidth:100%;\r\n}\r\n\r\n.projects .project {\r\n\tmax-width:31%;\r\n\twidth:31%;\r\n\tmin-width:260px;\r\n\tposition: relative;\r\n\tmargin-bottom:20px;\r\n\tmin-height:100px;\r\n\tbackground:#eee;\r\n}\r\n@media screen and (max-width:533px) {\r\n\t.projects .project {\r\n\t\tmin-width:100%;\r\n\t\twidth:100%;\r\n\t}\r\n}\r\n.project .project-image {\r\n\ttransition: 0.2s all ease;\r\n\tposition: relative;\r\n\twidth:100%;\r\n\theight:100%;\r\n\toverflow:hidden;\r\n}\r\n.project .project-image img {\r\n\ttransition: 0.2s all ease;\r\n}\r\n.project .project-image .image-border {\r\n\twidth:90%;\r\n\theight:90%;\r\n\tborder:1px solid rgba(255,255,255,0.3);\r\n\tbackground: transparent;\r\n\tposition: absolute;\r\n\tleft:5%;\r\n\ttop:5%;\r\n\ttransition: 0.2s all ease;\r\n\topacity:0;\r\n\ttransform:scale(0.9);\r\n\tz-index:40;\r\n}\r\n.project:hover .project-image .image-border {\r\n\ttransform:scale(1);\r\n\topacity:1;\r\n}\r\n.project .project-image .image-action {\r\n\topacity:0;\r\n\tposition: absolute;\r\n\tright:30px;\r\n\ttop:30px;\r\n\ttransition: 0.2s all ease;\r\n\tz-index:50;\r\n}\r\n.project:hover .project-image .image-action {\r\n\topacity:1;\r\n}\r\n.project .project-title {\r\n\tcursor:pointer;\r\n  position: absolute;\r\n  bottom: 25px;\r\n  left: 25px;\r\n  max-width: 190px;\r\n  border-radius: 4px;\r\n  text-align: left;\r\n  transition: 0.2s all ease;\r\n  z-index:50;\r\n}\r\n.project .project-title .title {\r\n\tmargin-top:0px;\r\n\ttransition: 0.2s all ease;\r\n}\r\n.project .project-title .description {\r\n\tcolor:#777;\r\n\ttransition: 0.2s all ease;\r\n}\r\n.project:hover .project-title .description,\r\n.project:hover .project-title .title {\r\n\topacity:1;\r\n\tcolor:#fff;\r\n}\r\n.project:hover .project-image {\r\n\tbackground:#0012ff;\r\n}\r\n.project:hover .project-image img {\r\n\topacity:0.2;\r\n}\r\n/* Modificators */\r\n.project.small .project-title {\r\n\tleft:15px;\r\n\tbottom:15px;\r\n}\r\n.project.small .project-title .title  {\r\n\tfont-size:20px;\r\n}\r\n.project.small .image-border {\r\n\tdisplay:none;\r\n}\r\n.project.small .project-image .image-action {\r\n\ttop:15px;\r\n\tright:15px;\r\n}\r\n.project.small {\r\n\tmin-width:190px!important\r\n}\r\n@media screen and (max-width:500px) {\r\n.project.small {\r\n\tmin-width:100%!important;\r\n}\r\n}\r\n", ""]);
 
 // exports
 
@@ -31882,7 +31899,7 @@ exports = module.exports = __webpack_require__(8)(undefined);
 
 
 // module
-exports.push([module.i, ".first .background {\n\tposition: absolute;\n\tleft:0px;\n\ttop:0px;\n\twidth:100%;\n\theight:100%;\n\toverflow:hidden;\n\tz-index:10;\n}\n.first .background img {\n\tposition: absolute;\n}\n.first .background .iphone {\n\tbottom: -418px;\n  left: -33px;\n}\n.first .background .ipad {\n\ttop: -591px;\n  right: -499px;\n}\n\n@media screen and (max-width:846px) {\n\t.first .background .ipad {\n\t\tdisplay:none;\n\t}\n}\n@media screen and (max-width:477px) {\n\t.first .background .iphone {\n\t\tbottom: -416px;\n    left: 0px;\n    width: 100%;\n\t}\n}\n@media screen and (max-width:377px) {\n\t.first .background .iphone {\n\t\tbottom: -295px;\n\t}\n}", ""]);
+exports.push([module.i, ".jumbotron {\r\n\twidth: 100%;\r\n  position: absolute;\r\n  z-index: 999;\r\n  left: 0px;\r\n  top: 0px;\r\n}\r\n.first .background {\r\n\tposition: absolute;\r\n\tleft:0px;\r\n\ttop:0px;\r\n\twidth:100%;\r\n\theight:100%;\r\n\toverflow:hidden;\r\n\tz-index:10;\r\n}\r\n.first .background img {\r\n\tposition: absolute;\r\n}\r\n.first .background .iphone {\r\n\tbottom: -418px;\r\n  left: -33px;\r\n}\r\n.first .background .ipad {\r\n\ttop: -591px;\r\n  right: -499px;\r\n}\r\n\r\n@media screen and (max-width:846px) {\r\n\t.first .background .ipad {\r\n\t\tdisplay:none;\r\n\t}\r\n}\r\n@media screen and (max-width:477px) {\r\n\t.first .background .iphone {\r\n\t\tbottom: -416px;\r\n    left: 0px;\r\n    width: 100%;\r\n\t}\r\n}\r\n@media screen and (max-width:377px) {\r\n\t.first .background .iphone {\r\n\t\tbottom: -295px;\r\n\t}\r\n}", ""]);
 
 // exports
 
@@ -32958,7 +32975,7 @@ exports = module.exports = __webpack_require__(8)(undefined);
 
 
 // module
-exports.push([module.i, ".page-about .block:first-child {\n\tpadding-top:0;\n}", ""]);
+exports.push([module.i, ".page-about .block:first-child {\r\n\tpadding-top:0;\r\n}", ""]);
 
 // exports
 
@@ -32987,6 +33004,10 @@ var _Modal = __webpack_require__(169);
 var _Modal2 = _interopRequireDefault(_Modal);
 
 var _reactHelmet = __webpack_require__(31);
+
+var _Socials = __webpack_require__(439);
+
+var _Socials2 = _interopRequireDefault(_Socials);
 
 var _SubscribeForm = __webpack_require__(413);
 
@@ -33138,6 +33159,11 @@ var Contact = function Contact(props) {
 					)
 				)
 			)
+		),
+		_react2.default.createElement(
+			'div',
+			{ className: 'block' },
+			_react2.default.createElement(_Socials2.default, null)
 		),
 		_react2.default.createElement(
 			'div',
@@ -33313,7 +33339,7 @@ exports = module.exports = __webpack_require__(8)(undefined);
 
 
 // module
-exports.push([module.i, "form {\n\tmargin:25px 0px;\n}\nform.fluid .field input,\nform.fluid .field textarea,\nform.fluid {\n\twidth:100%;\n}\n.field {\n\tposition:relative;\n\tmargin-bottom:15px;\n}\n.field label {\n\tmargin-bottom:5px;\n\tposition:absolute;\n\tleft:0px;\n\ttop:9px;\n\tz-index:1;\n\ttransition:0.2s all ease;\n}\n.field input,\n.field textarea {\n\tborder:0px;\n\tborder-bottom:1px solid #c0c0c0;\n\tpadding:10px 0px;\n\tfont-size:15px;\n\tbackground:transparent;\n\tz-index:999;\n\toutline:0;\n\ttransition:0.2s all ease;\n}\n.field input:focus,\n.field textarea:focus {\n\tborder-color:#0012ff;\n}\n.field.active label {\n  top: -10px;\n  left: 0px;\n  font-size:12px;\n \topacity:0.7;\n}\n.field.hidden {\n\tdisplay:none;\n\topacity:0;\n\tvisibility: hidden;\n}", ""]);
+exports.push([module.i, "form {\r\n\tmargin:25px 0px;\r\n}\r\nform.fluid .field input,\r\nform.fluid .field textarea,\r\nform.fluid {\r\n\twidth:100%;\r\n}\r\n.field {\r\n\tposition:relative;\r\n\tmargin-bottom:15px;\r\n}\r\n.field label {\r\n\tmargin-bottom:5px;\r\n\tposition:absolute;\r\n\tleft:0px;\r\n\ttop:9px;\r\n\tz-index:1;\r\n\ttransition:0.2s all ease;\r\n}\r\n.field input,\r\n.field textarea {\r\n\tborder:0px;\r\n\tborder-bottom:1px solid #c0c0c0;\r\n\tpadding:10px 0px;\r\n\tfont-size:15px;\r\n\tbackground:transparent;\r\n\tz-index:999;\r\n\toutline:0;\r\n\ttransition:0.2s all ease;\r\n}\r\n.field input:focus,\r\n.field textarea:focus {\r\n\tborder-color:#0012ff;\r\n}\r\n.field.active label {\r\n  top: -10px;\r\n  left: 0px;\r\n  font-size:12px;\r\n \topacity:0.7;\r\n}\r\n.field.hidden {\r\n\tdisplay:none;\r\n\topacity:0;\r\n\tvisibility: hidden;\r\n}", ""]);
 
 // exports
 
@@ -35648,7 +35674,7 @@ exports = module.exports = __webpack_require__(8)(undefined);
 
 
 // module
-exports.push([module.i, ".fluid {\n\twidth:100%;\n}\n.fluid input {\n\twidth:100%;\n}", ""]);
+exports.push([module.i, ".fluid {\r\n\twidth:100%;\r\n}\r\n.fluid input {\r\n\twidth:100%;\r\n}", ""]);
 
 // exports
 
@@ -35768,7 +35794,7 @@ exports = module.exports = __webpack_require__(8)(undefined);
 
 
 // module
-exports.push([module.i, ".Modal {\n\tposition:fixed;\n\tleft:0;\n\ttop:-100%;\n\twidth:100%;\n\theight:100%;\n\tz-index:-1;\n\topacity:0;\n\tvisibility:hidden;\n\tbackground:#000;\n\ttransition:0.4s all ease;\n\tdisplay:flex;\n\talign-items:flex-start;\n\tjustify-content:center;\n\toverflow-y:scroll;\n}\n.Modal-wrapper {\n\tmax-width:550px;\n\ttransition:0.4s all ease;\n\tpadding:0 15px;\n\theight: 100%;\n  display:flex;\n\talign-items:flex-start;\n\tjustify-content:flex-start;\n\tflex-direction:column;\n\tpadding-top:100px;\n}\n.Modal.open {\n\ttop:0;\n\topacity:1.0;\n\tvisibility: visible;\n\tz-index:999;\n}\n.Modal-title small {\n\tfont-weight:100;\n\topacity:0.5;\n}\n.Modal-closer {\n\tposition:absolute;\n\tright:20px;\n\ttop:20px;\n}\n", ""]);
+exports.push([module.i, ".Modal {\r\n\tposition:fixed;\r\n\tleft:0;\r\n\ttop:-100%;\r\n\twidth:100%;\r\n\theight:100%;\r\n\tz-index:-1;\r\n\topacity:0;\r\n\tvisibility:hidden;\r\n\tbackground:#000;\r\n\ttransition:0.4s all ease;\r\n\tdisplay:flex;\r\n\talign-items:flex-start;\r\n\tjustify-content:center;\r\n\toverflow-y:scroll;\r\n}\r\n.Modal-wrapper {\r\n\tmax-width:550px;\r\n\ttransition:0.4s all ease;\r\n\tpadding:0 15px;\r\n\theight: 100%;\r\n  display:flex;\r\n\talign-items:flex-start;\r\n\tjustify-content:flex-start;\r\n\tflex-direction:column;\r\n\tpadding-top:100px;\r\n}\r\n.Modal.open {\r\n\ttop:0;\r\n\topacity:1.0;\r\n\tvisibility: visible;\r\n\tz-index:999;\r\n}\r\n.Modal-title small {\r\n\tfont-weight:100;\r\n\topacity:0.5;\r\n}\r\n.Modal-closer {\r\n\tposition:absolute;\r\n\tright:20px;\r\n\ttop:20px;\r\n}\r\n", ""]);
 
 // exports
 
@@ -36530,7 +36556,7 @@ exports = module.exports = __webpack_require__(8)(undefined);
 
 
 // module
-exports.push([module.i, ".page-sustav .jumbotron {\n\tleft:0px;\n\tbottom:0px;\n\ttext-align:left;\n}\n.page-sustav .second .iphones {\n\tdisplay:flex;\n\tjustify-content: space-around;\n\talign-items:flex-start;\n}\n@media screen and (max-width:458px) {\n\t.page-sustav .second .iphones {\n\t\tflex-direction:column;\n\t\tjustify-content: center;\n\t\talign-items: center;\n\t}\n}\n.page-sustav .second .iphones .iphone2 {\n\tmargin-top:50px;\n}\n.page-sustav .third .background .imac {\n\twidth:700px;\n\tposition: absolute;\n\tleft:-200px;\n\tbottom:-300px;\n}\n@media screen and (max-width:1100px) {\n\t.page-sustav .third .background .imac {\n\t\twidth:400px;\n\t}\n}\n@media screen and (max-width:992px) {\n\t.page-sustav .third .background .imac {\n\t\tposition:static;\n\t\tmargin-top:20px;\n\t}\n}\n.page-sustav .first {\n\tbackground-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);\n}\n.page-sustav .fourth {\n\tbackground-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);\n}\n.page-sustav .fifth {\n\tbackground-image: linear-gradient(60deg, #000 0%, #444 100%);\n\tborder-bottom:0;\n}", ""]);
+exports.push([module.i, ".page-sustav .jumbotron {\r\n\tleft:0px;\r\n\tbottom:0px;\r\n\ttext-align:left;\r\n}\r\n.page-sustav .second .iphones {\r\n\tdisplay:flex;\r\n\tjustify-content: space-around;\r\n\talign-items:flex-start;\r\n}\r\n@media screen and (max-width:458px) {\r\n\t.page-sustav .second .iphones {\r\n\t\tflex-direction:column;\r\n\t\tjustify-content: center;\r\n\t\talign-items: center;\r\n\t}\r\n}\r\n.page-sustav .second .iphones .iphone2 {\r\n\tmargin-top:50px;\r\n}\r\n.page-sustav .third .background .imac {\r\n\twidth:700px;\r\n\tposition: absolute;\r\n\tleft:-200px;\r\n\tbottom:-300px;\r\n}\r\n@media screen and (max-width:1100px) {\r\n\t.page-sustav .third .background .imac {\r\n\t\twidth:400px;\r\n\t}\r\n}\r\n@media screen and (max-width:992px) {\r\n\t.page-sustav .third .background .imac {\r\n\t\tposition:static;\r\n\t\tmargin-top:20px;\r\n\t}\r\n}\r\n.page-sustav .first {\r\n\tbackground-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);\r\n}\r\n.page-sustav .fourth {\r\n\tbackground-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);\r\n}\r\n.page-sustav .fifth {\r\n\tbackground-image: linear-gradient(60deg, #000 0%, #444 100%);\r\n\tborder-bottom:0;\r\n}", ""]);
 
 // exports
 
@@ -37020,7 +37046,7 @@ exports = module.exports = __webpack_require__(8)(undefined);
 
 
 // module
-exports.push([module.i, ".page-avantazh .first {\n\tbackground-image: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);\n}\n.page-avantazh a {\n\tcolor:#333!important;\n}\n.page-avantazh .button a {\n\tcolor:#fff!important;\n}\n.page-avantazh .second .imac img {\n\tposition: absolute;\n\tleft:-199px;\n\tbottom:50px;\n\twidth:600px;\n}\n@media screen and (max-width:1186px) {\n\t.page-avantazh .second .imac img {\n\t\tposition: static;\n\t\tmargin-top:80px;\n\t}\n}\n@media screen and (max-width:710px) {\n\t.page-avantazh .second .imac img {\n\t\twidth:100%;\n\t}\n}\n.page-avantazh .third .imac {\n\tposition: absolute;\n  right: -300px;\n  width: 900px;\n}\n@media screen and (max-width:992px) {\n\t.page-avantazh .third .imac {\n\t\tposition: absolute;\n\t  right: -200px;\n\t  bottom:-500px;\n\t  width: 600px;\n\t}\n}\n@media screen and (max-width:710px) {\n\t.page-avantazh .third .background {\n\t\ttext-align:center;\n\t}\n\t.page-avantazh .third .imac {\n\t\tposition: static;\n\t\ttext-align:center;\n\t\twidth:80%;\n\t}\n}\n.page-avantazh .fifth {\n\tbackground-image: linear-gradient(-20deg, #e9defa 0%, #fbfcdb 100%);\n}", ""]);
+exports.push([module.i, ".page-avantazh .first {\r\n\tbackground-image: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);\r\n}\r\n.page-avantazh a {\r\n\tcolor:#333!important;\r\n}\r\n.page-avantazh .button a {\r\n\tcolor:#fff!important;\r\n}\r\n.page-avantazh .second .imac img {\r\n\tposition: absolute;\r\n\tleft:-199px;\r\n\tbottom:50px;\r\n\twidth:600px;\r\n}\r\n@media screen and (max-width:1186px) {\r\n\t.page-avantazh .second .imac img {\r\n\t\tposition: static;\r\n\t\tmargin-top:80px;\r\n\t}\r\n}\r\n@media screen and (max-width:710px) {\r\n\t.page-avantazh .second .imac img {\r\n\t\twidth:100%;\r\n\t}\r\n}\r\n.page-avantazh .third .imac {\r\n\tposition: absolute;\r\n  right: -300px;\r\n  width: 900px;\r\n}\r\n@media screen and (max-width:992px) {\r\n\t.page-avantazh .third .imac {\r\n\t\tposition: absolute;\r\n\t  right: -200px;\r\n\t  bottom:-500px;\r\n\t  width: 600px;\r\n\t}\r\n}\r\n@media screen and (max-width:710px) {\r\n\t.page-avantazh .third .background {\r\n\t\ttext-align:center;\r\n\t}\r\n\t.page-avantazh .third .imac {\r\n\t\tposition: static;\r\n\t\ttext-align:center;\r\n\t\twidth:80%;\r\n\t}\r\n}\r\n.page-avantazh .fifth {\r\n\tbackground-image: linear-gradient(-20deg, #e9defa 0%, #fbfcdb 100%);\r\n}", ""]);
 
 // exports
 
@@ -37382,7 +37408,7 @@ exports = module.exports = __webpack_require__(8)(undefined);
 
 
 // module
-exports.push([module.i, ".page-music .first {\n\tbackground-image: linear-gradient(135deg, #333 0%, #000 100%);\n}\n.page-music a {\n\tcolor:#111!important;\n}\n.page-music .first a {\n\tcolor:#fff!important;\n}\n.page-music .second .ipad {\n\tposition: absolute;\n\twidth:700px;\n\tright:-100px;\n\tbottom:-200px;\n}\n@media screen and (max-width:1232px) {\n\t.page-music .second .background {\n\t\tpadding-top:100px;\n\t\ttext-align:center;\n\t}\n\t.page-music .second .ipad {\n\t\tposition: static;\n\t\twidth:100%;\n\t}\n\t.page-music .second .ipad img {\n\t\twidth:80%;\n\t}\n}\n\n", ""]);
+exports.push([module.i, ".page-music .first {\r\n\tbackground-image: linear-gradient(135deg, #333 0%, #000 100%);\r\n}\r\n.page-music a {\r\n\tcolor:#111!important;\r\n}\r\n.page-music .first a {\r\n\tcolor:#fff!important;\r\n}\r\n.page-music .second .ipad {\r\n\tposition: absolute;\r\n\twidth:700px;\r\n\tright:-100px;\r\n\tbottom:-200px;\r\n}\r\n@media screen and (max-width:1232px) {\r\n\t.page-music .second .background {\r\n\t\tpadding-top:100px;\r\n\t\ttext-align:center;\r\n\t}\r\n\t.page-music .second .ipad {\r\n\t\tposition: static;\r\n\t\twidth:100%;\r\n\t}\r\n\t.page-music .second .ipad img {\r\n\t\twidth:80%;\r\n\t}\r\n}\r\n\r\n", ""]);
 
 // exports
 
@@ -37608,7 +37634,7 @@ exports = module.exports = __webpack_require__(8)(undefined);
 
 
 // module
-exports.push([module.i, ".prices {\n\tposition:relative;\n}\n.prices {\n\tposition:relative;\n}\n.prices:after {\n\tcontent: '';\n\tposition:absolute;\n\tleft:0px;\n\ttop:0px;\n\theight:100%;\n\twidth:2px;\n\tbackground: #0012ff;\n\tmargin-left:-20px;\n}\n.price {\n\tmargin-bottom:30px;\n}\n.price:last-child {\n\tborder-bottom:0px;\n\tmargin-bottom:0px;\n\tpadding-bottom:0px;\n}\n.price:after {\n\tcontent: '';\n\tposition:absolute;\n\tleft:-24px;\n\ttop:0px;\n\tborder-radius:100%;\n\twidth:10px;\n\theight:10px;\n\tbackground:#0012ff;\n}\n.price h2 {\n\tmargin-bottom:5px;\n\tmargin-top:0px;\n}\n.price-cost {\n\tmargin-top:5px;\n\tposition: relative;\n\tfont-size:20px;\n}\n.price-cost strong {\n\tcolor:#0012ff;\n\tfont-weight:100;\n}\n.price-cost:before {\n\tposition:absolute;\n\tright:100%;\n\ttop:11px;\n\tcontent: '';\n\tbackground:#0012ff;\n\twidth:90px;\n\theight:2px;\n\tmargin-right:10px;\n}\n.price-content {\n\tdisplay:flex;\n\twidth:100%;\n\tmax-width:100%;\n}\n.price-content .right,\n.price-content .left {\n\tmax-width:100%;\n}\n.price-content img {\n\tmargin-right:30px;\n}\n.price-title {\n\tfont-size:28px;\n\tmargin-top:0px;\n\tmin-height:60px;\n\tword-wrap: break-word;\n}\n@media screen and (max-width:576px) {\n\t.price-title {\n\t\tfont-size:22px;\n\t}\n}\n.price-description {\n\tmargin-top:15px!important;\n}", ""]);
+exports.push([module.i, ".prices {\r\n\tposition:relative;\r\n}\r\n.prices {\r\n\tposition:relative;\r\n}\r\n.prices:after {\r\n\tcontent: '';\r\n\tposition:absolute;\r\n\tleft:0px;\r\n\ttop:0px;\r\n\theight:100%;\r\n\twidth:2px;\r\n\tbackground: #0012ff;\r\n\tmargin-left:-20px;\r\n}\r\n.price {\r\n\tmargin-bottom:30px;\r\n}\r\n.price:last-child {\r\n\tborder-bottom:0px;\r\n\tmargin-bottom:0px;\r\n\tpadding-bottom:0px;\r\n}\r\n.price:after {\r\n\tcontent: '';\r\n\tposition:absolute;\r\n\tleft:-24px;\r\n\ttop:0px;\r\n\tborder-radius:100%;\r\n\twidth:10px;\r\n\theight:10px;\r\n\tbackground:#0012ff;\r\n}\r\n.price h2 {\r\n\tmargin-bottom:5px;\r\n\tmargin-top:0px;\r\n}\r\n.price-cost {\r\n\tmargin-top:5px;\r\n\tposition: relative;\r\n\tfont-size:20px;\r\n}\r\n.price-cost strong {\r\n\tcolor:#0012ff;\r\n\tfont-weight:100;\r\n}\r\n.price-cost:before {\r\n\tposition:absolute;\r\n\tright:100%;\r\n\ttop:11px;\r\n\tcontent: '';\r\n\tbackground:#0012ff;\r\n\twidth:90px;\r\n\theight:2px;\r\n\tmargin-right:10px;\r\n}\r\n.price-content {\r\n\tdisplay:flex;\r\n\twidth:100%;\r\n\tmax-width:100%;\r\n}\r\n.price-content .right,\r\n.price-content .left {\r\n\tmax-width:100%;\r\n}\r\n.price-content img {\r\n\tmargin-right:30px;\r\n}\r\n.price-title {\r\n\tfont-size:28px;\r\n\tmargin-top:0px;\r\n\tmin-height:60px;\r\n\tword-wrap: break-word;\r\n}\r\n@media screen and (max-width:576px) {\r\n\t.price-title {\r\n\t\tfont-size:22px;\r\n\t}\r\n}\r\n.price-description {\r\n\tmargin-top:15px!important;\r\n}", ""]);
 
 // exports
 
@@ -37730,7 +37756,7 @@ exports = module.exports = __webpack_require__(8)(undefined);
 
 
 // module
-exports.push([module.i, ".notFound img {\n\tmargin-bottom:20px;\n}", ""]);
+exports.push([module.i, ".notFound img {\r\n\tmargin-bottom:20px;\r\n}", ""]);
 
 // exports
 
@@ -37764,7 +37790,7 @@ var _Footer = __webpack_require__(171);
 
 var _Footer2 = _interopRequireDefault(_Footer);
 
-__webpack_require__(441);
+__webpack_require__(442);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -37999,7 +38025,7 @@ exports = module.exports = __webpack_require__(8)(undefined);
 
 
 // module
-exports.push([module.i, ".burger {\n\tposition: fixed;\n\tleft:40px;\n\ttop:40px;\n\tz-index:50;\n}\n@media screen and (max-width:498px) {\n\t.burger {\n\t\tleft:30px;\n\t\ttop:30px;\n\t}\n}\n.burger .navigation ul {\n\tmargin:0px;\n\tpadding:0px;\n\tlist-style-type:none;\n}\n.burger .navigation ul a li {\n\tpadding:5px 0px;\n\tcolor:#000;\n\tposition:relative;\n}\n@media screen and (max-width:576px) {\n\t.burger .navigation ul a li {\n\t\tfont-size:22px;\n\t}\n}\n.burger .navigation a li:after {\n\twidth:1px;\n\theight:13px;\n\tbackground:#000;\n\tcontent: '';\n\tposition: absolute;\n\tleft:-20px;\n\tbottom:7px;\n\topacity:0;\n\ttransition:0.2s all ease;\n}\n.burger .navigation a li:hover:after {\n\topacity:1.0;\n}\n.burger .navigation ul a:last-child {\n\tmargin-right:0px\n}\n.burger .navigation {\n\tmargin-top:10px;\n\topacity:0;\n\tvisibility: hidden;\n\ttransition: 0.2s all ease;\n}\n.burger .navigation.revealed {\n\topacity:1.0;\n\tleft:42px;\n\tvisibility: visible;\n}\n.burger .burger-revealer {\n\tcursor:pointer;\n}\n.with-menu {\n  opacity: .1;\n  -webkit-filter: blur(5px);\n  -moz-filter: blur(5px);\n  -o-filter: blur(5px);\n  -ms-filter: blur(5px);\n  filter: blur(5px);\n}", ""]);
+exports.push([module.i, ".burger {\r\n\tposition: fixed;\r\n\tleft:40px;\r\n\ttop:40px;\r\n\tz-index:50;\r\n}\r\n@media screen and (max-width:498px) {\r\n\t.burger {\r\n\t\tleft:30px;\r\n\t\ttop:30px;\r\n\t}\r\n}\r\n.burger .navigation ul {\r\n\tmargin:0px;\r\n\tpadding:0px;\r\n\tlist-style-type:none;\r\n}\r\n.burger .navigation ul a li {\r\n\tpadding:5px 0px;\r\n\tcolor:#000;\r\n\tposition:relative;\r\n}\r\n@media screen and (max-width:576px) {\r\n\t.burger .navigation ul a li {\r\n\t\tfont-size:22px;\r\n\t}\r\n}\r\n.burger .navigation a li:after {\r\n\twidth:1px;\r\n\theight:13px;\r\n\tbackground:#000;\r\n\tcontent: '';\r\n\tposition: absolute;\r\n\tleft:-20px;\r\n\tbottom:7px;\r\n\topacity:0;\r\n\ttransition:0.2s all ease;\r\n}\r\n.burger .navigation a li:hover:after {\r\n\topacity:1.0;\r\n}\r\n.burger .navigation ul a:last-child {\r\n\tmargin-right:0px\r\n}\r\n.burger .navigation {\r\n\tmargin-top:10px;\r\n\topacity:0;\r\n\tvisibility: hidden;\r\n\ttransition: 0.2s all ease;\r\n}\r\n.burger .navigation.revealed {\r\n\topacity:1.0;\r\n\tleft:42px;\r\n\tvisibility: visible;\r\n}\r\n.burger .burger-revealer {\r\n\tcursor:pointer;\r\n}\r\n.with-menu {\r\n  opacity: .1;\r\n  -webkit-filter: blur(5px);\r\n  -moz-filter: blur(5px);\r\n  -o-filter: blur(5px);\r\n  -ms-filter: blur(5px);\r\n  filter: blur(5px);\r\n}", ""]);
 
 // exports
 
@@ -38008,10 +38034,74 @@ exports.push([module.i, ".burger {\n\tposition: fixed;\n\tleft:40px;\n\ttop:40px
 /* 439 */
 /***/ (function(module, exports, __webpack_require__) {
 
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+	value: true
+});
+
+var _react = __webpack_require__(1);
+
+var _react2 = _interopRequireDefault(_react);
+
+__webpack_require__(450);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var Socials = function Socials() {
+	return _react2.default.createElement(
+		'div',
+		{ className: 'socials' },
+		_react2.default.createElement(
+			'div',
+			{ className: 'social vk' },
+			_react2.default.createElement(
+				'a',
+				{ href: 'https://vk.com/levelupweb', target: '_blank' },
+				_react2.default.createElement('i', { className: 'fa fa-vk' })
+			)
+		),
+		_react2.default.createElement(
+			'div',
+			{ className: 'social twitter' },
+			_react2.default.createElement(
+				'a',
+				{ href: 'https://twitter.com/levelup_web', target: '_blank' },
+				_react2.default.createElement('i', { className: 'fa fa-twitter' })
+			)
+		),
+		_react2.default.createElement(
+			'div',
+			{ className: 'social github' },
+			_react2.default.createElement(
+				'a',
+				{ href: 'https://github.com/levelupweb/', target: '_blank' },
+				_react2.default.createElement('i', { className: 'fa fa-github' })
+			)
+		),
+		_react2.default.createElement(
+			'div',
+			{ className: 'social telegram' },
+			_react2.default.createElement(
+				'a',
+				{ href: 'https://t.me/levelupweb', target: '_blank' },
+				_react2.default.createElement('i', { className: 'fa fa-telegram' })
+			)
+		)
+	);
+};
+
+exports.default = Socials;
+
+/***/ }),
+/* 440 */
+/***/ (function(module, exports, __webpack_require__) {
+
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(440);
+var content = __webpack_require__(441);
 if(typeof content === 'string') content = [[module.i, content, '']];
 // Prepare cssTransformation
 var transform;
@@ -38036,7 +38126,7 @@ if(false) {
 }
 
 /***/ }),
-/* 440 */
+/* 441 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(8)(undefined);
@@ -38044,19 +38134,19 @@ exports = module.exports = __webpack_require__(8)(undefined);
 
 
 // module
-exports.push([module.i, ".footer {\n  width:100%;\n  position:fixed;\n  bottom:0px;\n  left:0px;\n  display:flex;\n  align-items:center;\n  justify-content:center;\n}\n.footer .footer-wrapper {\n\tpadding:40px;\n  display:flex;\n  align-items:center;\n  justify-content:center;\n}\n@media screen and (max-width: 498px) {\n\t.footer .footer-wrapper {\n\t\tpadding: 15px;\n\t}\n}\n.footer.onPage {\n  color:#444;\n  font-size:15px;\n  font-weight:100;\n  width:100%;\n  position: static;\n}\n.footer.onPage .footer-wrapper {\n  justify-content: space-between;\n  align-items: center;\n  position: static;\n  border-top:1px solid #e1e1e1;\n  padding:13px 8px;\n  padding-bottom:0;\n  width:100%;\n}\n@media screen and (max-width:992px) {\n  .footer {\n    display:none;\n  }\n  .footer.onPage {\n    display:block;\n  }\n}", ""]);
+exports.push([module.i, ".footer {\r\n  width:100%;\r\n  position:fixed;\r\n  bottom:0px;\r\n  left:0px;\r\n  display:flex;\r\n  align-items:center;\r\n  justify-content:center;\r\n}\r\n.footer .footer-wrapper {\r\n\tpadding:40px;\r\n  display:flex;\r\n  align-items:center;\r\n  justify-content:center;\r\n}\r\n@media screen and (max-width: 498px) {\r\n\t.footer .footer-wrapper {\r\n\t\tpadding: 15px;\r\n\t}\r\n}\r\n.footer.onPage {\r\n  color:#444;\r\n  font-size:15px;\r\n  font-weight:100;\r\n  width:100%;\r\n  position: static;\r\n}\r\n.footer.onPage .footer-wrapper {\r\n  justify-content: space-between;\r\n  align-items: center;\r\n  position: static;\r\n  border-top:1px solid #e1e1e1;\r\n  padding:13px 8px;\r\n  padding-bottom:0;\r\n  width:100%;\r\n}\r\n@media screen and (max-width:992px) {\r\n  .footer {\r\n    display:none;\r\n  }\r\n  .footer.onPage {\r\n    display:block;\r\n  }\r\n}", ""]);
 
 // exports
 
 
 /***/ }),
-/* 441 */
+/* 442 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(442);
+var content = __webpack_require__(443);
 if(typeof content === 'string') content = [[module.i, content, '']];
 // Prepare cssTransformation
 var transform;
@@ -38081,7 +38171,7 @@ if(false) {
 }
 
 /***/ }),
-/* 442 */
+/* 443 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(8)(undefined);
@@ -38089,13 +38179,13 @@ exports = module.exports = __webpack_require__(8)(undefined);
 
 
 // module
-exports.push([module.i, ".default-container {\n\tposition: relative;\n}", ""]);
+exports.push([module.i, ".default-container {\r\n\tposition: relative;\r\n}", ""]);
 
 // exports
 
 
 /***/ }),
-/* 443 */
+/* 444 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -38115,7 +38205,7 @@ var _propTypes = __webpack_require__(5);
 
 var _propTypes2 = _interopRequireDefault(_propTypes);
 
-var _Header = __webpack_require__(444);
+var _Header = __webpack_require__(445);
 
 var _Header2 = _interopRequireDefault(_Header);
 
@@ -38123,7 +38213,7 @@ var _Footer = __webpack_require__(171);
 
 var _Footer2 = _interopRequireDefault(_Footer);
 
-__webpack_require__(447);
+__webpack_require__(448);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -38152,7 +38242,7 @@ var RoutePageContainer = function RoutePageContainer(_ref) {
 exports.default = RoutePageContainer;
 
 /***/ }),
-/* 444 */
+/* 445 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -38168,7 +38258,7 @@ var _react2 = _interopRequireDefault(_react);
 
 var _reactRouterDom = __webpack_require__(15);
 
-__webpack_require__(445);
+__webpack_require__(446);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -38249,13 +38339,13 @@ var Header = function Header(props) {
 exports.default = Header;
 
 /***/ }),
-/* 445 */
+/* 446 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(446);
+var content = __webpack_require__(447);
 if(typeof content === 'string') content = [[module.i, content, '']];
 // Prepare cssTransformation
 var transform;
@@ -38280,7 +38370,7 @@ if(false) {
 }
 
 /***/ }),
-/* 446 */
+/* 447 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(8)(undefined);
@@ -38288,19 +38378,19 @@ exports = module.exports = __webpack_require__(8)(undefined);
 
 
 // module
-exports.push([module.i, ".header {\n\ttransition:0.2s all ease;\n}\n.header .navigation {\n\tborder-bottom:1px solid #eee;\n\tdisplay:flex;\n\tjustify-content: space-between;\n\talign-items: center;\n}\n.header .navigation ul {\n\tmargin:0px;\n\tpadding:0px;\n\tlist-style-type:none;\n\tdisplay:flex;\n\tflex-wrap:wrap;\n}\n.header .navigation a {\n\tborder-bottom: 1px solid transparent;\n  padding: 0px 8px 8px 8px;\n  transition: 0.2s all ease;\n  display:block;\n}\n.header .navigation a:hover {\n\tborder-color:#000;\n}\n.header .navigation ul a li {\n\tpadding:5px 0px;\n\tcolor:#000;\n\tfont-weight:500;\n\tposition:relative;\n}\n.header .navigation ul a li i {\n\tfont-size:12px;\n\tvertical-align: middle;\n\topacity:.4;\n}\n.header .header-logo {\n\tdisplay:block;\n}\n.header .header-logo img {\n\twidth:30px;\n\theight:30px;\n}", ""]);
+exports.push([module.i, ".header {\r\n\ttransition:0.2s all ease;\r\n}\r\n.header .navigation {\r\n\tborder-bottom:1px solid #eee;\r\n\tdisplay:flex;\r\n\tjustify-content: space-between;\r\n\talign-items: center;\r\n}\r\n.header .navigation ul {\r\n\tmargin:0px;\r\n\tpadding:0px;\r\n\tlist-style-type:none;\r\n\tdisplay:flex;\r\n\tflex-wrap:wrap;\r\n}\r\n.header .navigation a {\r\n\tborder-bottom: 1px solid transparent;\r\n  padding: 0px 8px 8px 8px;\r\n  transition: 0.2s all ease;\r\n  display:block;\r\n}\r\n.header .navigation a:hover {\r\n\tborder-color:#000;\r\n}\r\n.header .navigation ul a li {\r\n\tpadding:5px 0px;\r\n\tcolor:#000;\r\n\tfont-weight:500;\r\n\tposition:relative;\r\n}\r\n.header .navigation ul a li i {\r\n\tfont-size:12px;\r\n\tvertical-align: middle;\r\n\topacity:.4;\r\n}\r\n.header .header-logo {\r\n\tdisplay:block;\r\n}\r\n.header .header-logo img {\r\n\twidth:30px;\r\n\theight:30px;\r\n}", ""]);
 
 // exports
 
 
 /***/ }),
-/* 447 */
+/* 448 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(448);
+var content = __webpack_require__(449);
 if(typeof content === 'string') content = [[module.i, content, '']];
 // Prepare cssTransformation
 var transform;
@@ -38325,7 +38415,7 @@ if(false) {
 }
 
 /***/ }),
-/* 448 */
+/* 449 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(8)(undefined);
@@ -38334,6 +38424,51 @@ exports = module.exports = __webpack_require__(8)(undefined);
 
 // module
 exports.push([module.i, "", ""]);
+
+// exports
+
+
+/***/ }),
+/* 450 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(451);
+if(typeof content === 'string') content = [[module.i, content, '']];
+// Prepare cssTransformation
+var transform;
+
+var options = {}
+options.transform = transform
+// add the styles to the DOM
+var update = __webpack_require__(9)(content, options);
+if(content.locals) module.exports = content.locals;
+// Hot Module Replacement
+if(false) {
+	// When the styles change, update the <style> tags
+	if(!content.locals) {
+		module.hot.accept("!!../../../node_modules/css-loader/index.js?importLoaders=1!./socials.css", function() {
+			var newContent = require("!!../../../node_modules/css-loader/index.js?importLoaders=1!./socials.css");
+			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+			update(newContent);
+		});
+	}
+	// When the module is disposed, remove the <style> tags
+	module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+/* 451 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(8)(undefined);
+// imports
+
+
+// module
+exports.push([module.i, ".socials {\r\n\tdisplay:inline;\r\n}\r\n.socials .social {\r\n\tmargin-left:15px;\r\n\tdisplay:inline-block;\r\n}\r\n.socials .social:first-child {\r\n\tmargin-left:0;\r\n}", ""]);
 
 // exports
 

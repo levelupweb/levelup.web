@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Socials from '../socials/Socials.js'
 import './footer.css'
 
 export default class Footer extends Component {
@@ -20,6 +21,7 @@ export default class Footer extends Component {
 								Создано в <a href="http://web.levelupworlds.com">Levelup Web</a> с любовью
 							</div>
 							<div className="right">
+								<Socials />
 							</div>
 						</div>
 					</div>
