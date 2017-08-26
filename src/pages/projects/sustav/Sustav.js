@@ -29,10 +29,10 @@ const Sustav = props => {
 									</div>
 									<div className="section-title">
 										<h4 className="title super">
-											<a href="http://sustav.pro">Sustav</a>
+											<a href="http://sustav.pro" target="_blank">Sustav</a>
 										</h4>
 										<p className="description">
-											<a href="http://sustav.pro" style={{opacity:0.4}}>http://sustav.pro</a>
+											<a href="http://sustav.pro" target="_blank" style={{opacity:0.4}}>http://sustav.pro</a>
 											</p>
 									</div>
 									<div className="section-content">
@@ -225,7 +225,7 @@ const Sustav = props => {
 										Хотите заказать себе похожий сайт?
 									</h5>
 										<button style={{marginTop:20+ 'px'}} className="button ghost">
-											<Link to="/contact">Связаться</Link>
+											<Link to="/contact">Написать нам</Link>
 										</button>
 									</div>
 								</div>

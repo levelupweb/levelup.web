@@ -201,7 +201,7 @@ const Avantazh = props => {
 										Хотите заказать себе похожий сайт?
 									</h5>
 									<button style={{marginTop:20+ 'px'}} className="button">
-										<Link to="/contact"><span style={{color:'#fff!important'}}>Связаться</span></Link>
+										<Link to="/contact"><span style={{color:'#fff!important'}}>Написать нам</span></Link>
 									</button>
 								</div>
 								</div>

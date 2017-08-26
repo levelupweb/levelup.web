@@ -26,10 +26,10 @@ const Music = props => {
 								<div className="block">
 									<div className="section-title ">
 										<p className="description">
-											<a href="http://levelupmusic.ru" style={{opacity:0.4}}>http://levelupmusic.ru</a>
+											<a href="http://levelupmusic.ru" target="_blank" style={{opacity:0.4}}>http://levelupmusic.ru</a>
 											</p>
 										<h4 className="title super">
-											<a href="http://levelupmusic.ru">Levelup Music</a>
+											<a href="http://levelupmusic.ru" target="_blank">Levelup Music</a>
 										</h4>
 										
 									</div>
@@ -136,7 +136,9 @@ const Music = props => {
 									<h5 className="title super">
 										Хотите заказать себе похожий сайт?
 									</h5>
-									<button style={{marginTop:20+ 'px'}} className="button">Связаться</button>
+									<button style={{marginTop:20+ 'px'}} className="button">
+										<Link to="/contact">Написать нам</Link>
+									</button>
 								</div>
 								</div>
 							</div>

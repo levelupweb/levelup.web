@@ -36108,7 +36108,7 @@ var Sustav = function Sustav(props) {
 									{ className: "title super" },
 									_react2.default.createElement(
 										"a",
-										{ href: "http://sustav.pro" },
+										{ href: "http://sustav.pro", target: "_blank" },
 										"Sustav"
 									)
 								),
@@ -36117,7 +36117,7 @@ var Sustav = function Sustav(props) {
 									{ className: "description" },
 									_react2.default.createElement(
 										"a",
-										{ href: "http://sustav.pro", style: { opacity: 0.4 } },
+										{ href: "http://sustav.pro", target: "_blank", style: { opacity: 0.4 } },
 										"http://sustav.pro"
 									)
 								)
@@ -36475,7 +36475,7 @@ var Sustav = function Sustav(props) {
 									_react2.default.createElement(
 										_reactRouterDom.Link,
 										{ to: "/contact" },
-										"\u0421\u0432\u044F\u0437\u0430\u0442\u044C\u0441\u044F"
+										"\u041D\u0430\u043F\u0438\u0441\u0430\u0442\u044C \u043D\u0430\u043C"
 									)
 								)
 							)
@@ -36964,7 +36964,7 @@ var Avantazh = function Avantazh(props) {
 										_react2.default.createElement(
 											"span",
 											{ style: { color: '#fff!important' } },
-											"\u0421\u0432\u044F\u0437\u0430\u0442\u044C\u0441\u044F"
+											"\u041D\u0430\u043F\u0438\u0441\u0430\u0442\u044C \u043D\u0430\u043C"
 										)
 									)
 								)
@@ -37120,7 +37120,7 @@ var Music = function Music(props) {
 									{ className: "description" },
 									_react2.default.createElement(
 										"a",
-										{ href: "http://levelupmusic.ru", style: { opacity: 0.4 } },
+										{ href: "http://levelupmusic.ru", target: "_blank", style: { opacity: 0.4 } },
 										"http://levelupmusic.ru"
 									)
 								),
@@ -37129,7 +37129,7 @@ var Music = function Music(props) {
 									{ className: "title super" },
 									_react2.default.createElement(
 										"a",
-										{ href: "http://levelupmusic.ru" },
+										{ href: "http://levelupmusic.ru", target: "_blank" },
 										"Levelup Music"
 									)
 								)
@@ -37328,7 +37328,11 @@ var Music = function Music(props) {
 								_react2.default.createElement(
 									"button",
 									{ style: { marginTop: 20 + 'px' }, className: "button" },
-									"\u0421\u0432\u044F\u0437\u0430\u0442\u044C\u0441\u044F"
+									_react2.default.createElement(
+										_reactRouterDom.Link,
+										{ to: "/contact" },
+										"\u041D\u0430\u043F\u0438\u0441\u0430\u0442\u044C \u043D\u0430\u043C"
+									)
 								)
 							)
 						)
