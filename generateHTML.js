@@ -31,8 +31,11 @@ const generateHTML = (html, helmet) =>
     ${helmet.meta.toString()}
     <meta property="og:locale" content="ru_RU">
     <meta property="og:image" content="http://web.levelupworlds.com/dist/img/opengraphimage.png">
-    <meta property="og:image:width" content="968">
-    <meta property="og:image:height" content="504">
+    <meta property="og:image:width" content="537">
+    <meta property="og:site_name" content="Levelup Web" />
+    <meta property="og:title" content="Levelup Web Project" />
+    <meta property="og:description" content="Levelup Web - студия полного цикла. Студия веб-разработок" />
+    <meta property="og:image:height" content="240">
   </head>
   <body>
     <noscript>
