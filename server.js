@@ -7,6 +7,7 @@ import generateHTML from './generateHTML.js'
 import path from 'path'
 import { Helmet } from 'react-helmet'
 import config from './config.js'
+import jwt from 'jsonwebtoken';
 
 const app = express()
 
