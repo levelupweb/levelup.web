@@ -11,11 +11,6 @@ class Index extends React.Component {
     super(props);
   }
 
-  componentDidMount() {
-  	var ScrollReveal = require('scrollreveal');
-		initScrollReveal()
-  }
-
   render() {
     return (
 			<div>
@@ -81,25 +76,5 @@ class Index extends React.Component {
 		)
   }
 }
-
-
-const initScrollReveal = () => {
-	var sr = ScrollReveal();
-	sr.reveal(".jumbotron .jumbotron-title", {
-		duration: 500,
-		delay: 100,
-		origin: "top"
-	});
-	sr.reveal(".jumbotron .jumbotron-content", {
-		duration: 500,
-		delay: 200,
-		origin: "top"
-	});
-	sr.reveal(".projects .project", {
-		duration: 1000,
-		delay: 600,
-		origin: "top"
-	}, 100);
-};
 
 export default Index;

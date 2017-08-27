@@ -7,11 +7,11 @@ import generateHTML from './generateHTML.js'
 import path from 'path'
 import { Helmet } from 'react-helmet'
 import config from './config.js'
-import jwt from 'jsonwebtoken';
 
-const app = express()
+const app = express();
 
 app.use(config.staticFolder, express.static(__dirname + config.staticFolder));
+
 app.get('*', (req, res) => {
 	const html = renderToString(
     <StaticRouter location={req.url} context={{}}>

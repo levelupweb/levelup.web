@@ -11,13 +11,7 @@ import 'react-notifications/lib/notifications.css';
 class ContactForm extends React.Component {
 	constructor(props) {
 		super(props);
-		this.mail = new Mail(
-			config.mail.secret, 
-			'Иван из Levelup Web', 
-			'beatzhitta@gmail.com', 
-			'Новая заявка на сайте Levelup.Web',
-			config.mail.sendURL
-		);
+		this.mail = new Mail('Новая заявка на сайте Levelup.Web');
 		this.updateForm = this.updateForm.bind(this);
 		this.submitForm = this.submitForm.bind(this);
 		this.renderFields = this.renderFields.bind(this);
