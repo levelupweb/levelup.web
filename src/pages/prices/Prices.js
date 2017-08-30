@@ -12,35 +12,38 @@ const contactModalConfiguration = {
 	content: 'С вашими деловыми предложениями вы можете обращаться при помощи данной формы обратной связи'
 }
 
-const contactFormFields = [
-	{
+const contactFormFields = [ {
 		fieldName: 'Имя клиента',
 		placeholder: 'Ваше имя',
 		name: 'userName',
 		type: 'text'
-	},
-	{
+	}, {
 		fieldName: 'E-Mail',
 		placeholder: 'Ваш E-Mail',
 		name: 'userEmail',
 		type: 'text'
-	},
-	{
+	}, {
 		fieldName: 'Мобильный телефон',
 		placeholder: 'Контактный телефон',
 		name: 'userPhone',
 		type: 'text'
-	},
-	{
+	}, {
 		fieldName: 'Сообщение',
 		placeholder: 'Ваше сообщение',
 		name: 'userMessage',
 		type: 'textarea'
-	}
-]
+} ]
+
+const contactFormRules = {
+	userName: ['required'],
+	userEmail: ['required', 'email'],
+	userPhone: ['required', 'mobile'],
+	userMessage: ['required']
+}
 
 const renderContactForm = () => <ContactForm 
 	isFluid={true} 
+	rules={contactFormRules}
 	fields={contactFormFields} />
 
 const Prices = props => {

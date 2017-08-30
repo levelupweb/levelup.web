@@ -3,11 +3,13 @@ import { Route } from "react-router-dom";
 import propTypes from "prop-types";
 import Header from '../components/header/Header.js';
 import Footer from '../components/footer/Footer.js';
+import { NotificationContainer } from 'react-notifications';
 import './RoutePageContainer.css';
 
 const RoutePageContainer = ({ component, location, ...rest }) =>
 	<Route render={props => 
 		<div className="page-container">
+			<NotificationContainer />
 			<div className="site-content">
 				<div className="container text blocks">
 					<Header />

@@ -44,8 +44,16 @@ const subscribeModalConfiguration = {
 	description: 'Но скоро всё обязательно вернётся! :)',
 }
 
+const contactFormRules = {
+	userName: ['required'],
+	userEmail: ['required', 'email'],
+	userPhone: ['required', 'mobile'],
+	userMessage: ['required']
+}
+
 const renderContactForm = () => <ContactForm 
 	isFluid={true} 
+	rules={contactFormRules}
 	fields={contactFormFields} />
 
 const renderSubscribeForm = () => <SubscribeForm />
@@ -55,16 +63,8 @@ const Contact = props => {
 		<div className="page-contact page">
 			<Helmet>
         <title>Контакты - Levelup Web</title>
-        <meta name="description" content="Контакты Levelup Web. Студия веб-разработок" />
-    		<meta name="keywords" content="веб-разработка, веб агентство, создать веб-приложение, разработка приложений, купить сайт, создать сайт в студии под ключ, сайт под ключ купить" />
-    		<meta name="author" content="Levelup Web" />
-  			<meta name="robots" content="index, follow" />
-  			<meta name="revisit-after" content="1 days" />
-  			<meta property="og:type" content="website" />
-    		<meta property="og:site_name" content="Levelup Web" />
-    		<meta property="og:title" content="Контакты - Levelup Web Project" />
-    		<meta property="og:description" content="Контакты Levelup Web. Студия веб-разработок" />
-    		<meta property="og:url" content="http://web.levelupworlds.com/contact" />
+        <meta name="description" content="Контакты Levelup Worlds. Digital-студия полного цикла" />
+    		<meta name="keywords" content="фото, видео съемка, звукозапись, звук студия, веб-разработка, веб агентство, создать веб-приложение, разработка приложений, купить сайт, создать сайт в студии под ключ, сайт под ключ купить" />
     	</Helmet>
 			<div className="block">
 				<div className="block-title left" id="contact">
