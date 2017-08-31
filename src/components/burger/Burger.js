@@ -59,7 +59,8 @@ class Burger extends Component {
 							<li>Услуги и цены</li>
 						</Link>
 						<a
-							href="http://levelupworlds.com/#/page/career"
+							target="_blank"
+							href="http://levelupworlds.com/career"
 							onClick={() => {
 								this.revealNavigation();
 							}} >

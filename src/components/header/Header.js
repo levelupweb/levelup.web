@@ -15,7 +15,7 @@ const Header = props =>
 					to="/prices">
 					<li>Услуги и цены</li>
 				</Link>
-				<a href="http://levelupworlds.com/#/page/career">
+				<a href="http://levelupworlds.com/career" target="_blank">
 					<li>Карьера <i className="fa fa-external-link"></i></li>
 				</a>
 				<Link
