@@ -5,6 +5,7 @@
 /dist
 # testing
 /coverage
+config.js
 
 # production
 /build
