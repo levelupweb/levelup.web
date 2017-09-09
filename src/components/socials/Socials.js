@@ -23,6 +23,17 @@ const Socials = () =>
 				<i className="fa fa-telegram"></i>
 			</a>
 		</div>
+		<div className="social instagram">
+			<a href="https://www.instagram.com/levelup_web/" target="_blank">
+				<i className="fa fa-instagram"></i>
+			</a>
+		</div>
+		<div className="social facebook">
+			<a href="https://www.facebook.com/Levelup-WEB-272217566600498/" target="_blank">
+				<i className="fa fa-facebook"></i>
+			</a>
+		</div>
+		
 	</div>
 
 export default Socials;
