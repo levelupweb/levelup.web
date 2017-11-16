@@ -13,17 +13,17 @@ const app = express();
 app.use(config.staticFolder, express.static(__dirname + config.staticFolder));
 
 app.get('*', (req, res) => {
-	const html = renderToString(
+  const html = renderToString(
     <StaticRouter location={req.url} context={{}}>
       <App />
     </StaticRouter>
   )
   const helmet = Helmet.renderStatic();
-	res.send(generateHTML(html, helmet));
+  res.send(generateHTML(html, helmet));
 });
 
 app.listen(config.port, err => {
-  if(err) return console.log(err)
- 	console.log('-> Levelup Web on: ' + config.port);
- 	console.log('-> Address: ' + config.domain);
+  if (err) return console.log(err)
+  console.log('-> Levelup Web on: ' + config.port);
+  console.log('-> Address: ' + config.domain);
 });

@@ -1,0 +1,32 @@
+.page-kino .first {
+	background-image: linear-gradient(135deg, #333 0%, #000 100%);
+}
+
+.page-kino a {
+	color:#111!important;
+}
+.page-kino .first a {
+	color:#fff!important;
+}
+.page-kino p.primary {
+  color:#fff!important;
+}
+.page-kino .second .ipad {
+	position: absolute;
+	width:700px;
+	right:-100px;
+	bottom:-200px;
+}
+@media screen and (max-width:1232px) {
+	.page-kino .second .background {
+		padding-top:100px;
+		text-align:center;
+	}
+	.page-kino .second .ipad {
+		position: static;
+		width:100%;
+	}
+	.page-kino .second .ipad img {
+		width:80%;
+	}
+}

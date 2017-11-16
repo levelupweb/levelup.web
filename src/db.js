@@ -19,5 +19,12 @@ export const projects = [
 		title: 'Avantazh',
 		description: 'Сайт бухгалтерской компании',
 		image: 'dist/img/avantazh.png'
+	},
+	{
+		id: 4,
+		slug: 'kino',
+		title: 'Кострома Фильм',
+		description: 'Кинокомпания',
+		image: 'dist/img/kino-prev.png'
 	}
 ]

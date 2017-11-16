@@ -5,6 +5,7 @@
   "dependencies": {
     "axios": "^0.16.2",
     "express": "^4.15.4",
+    "path-to-regexp": "^2.1.0",
     "prop-types": "^15.5.10",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",

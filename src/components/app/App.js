@@ -9,6 +9,7 @@ import Contact from "../../pages/contact/Contact.js";
 import Projects from "../../pages/projects/Projects.js";
 import Sustav from "../../pages/projects/sustav/Sustav.js";
 import Avantazh from "../../pages/projects/avantazh/Avantazh.js";
+import Kino from "../../pages/projects/kino/Kino.js";
 import Music from "../../pages/projects/music/Music.js";
 import Prices from "../../pages/prices/Prices.js";
 import notFound from "../../pages/notFound/notFound.js";
@@ -32,8 +33,9 @@ const App = props => {
 				<RouteDefaultContainer path="/sustav" component={Sustav} />
 				<RouteDefaultContainer path="/music" component={Music} />
 				<RouteDefaultContainer path="/avantazh" component={Avantazh} />
+				<RouteDefaultContainer path="/kino" component={Kino} />
 				<RouteDefaultContainer component={notFound} />
-			</Switch>			
+			</Switch>
 		</div>
 	);
 };
