@@ -29,10 +29,10 @@ const Kino = props => {
                 </div>
                 <div className="section-title">
                   <h4 className="title super">
-                    <a href="http://kostroma-film.ru" target="_blank">Кострома Фильм</a>
+                    <a href="http://kostromafilm.ru/" target="_blank">Кострома Фильм</a>
                   </h4>
                   <p className="description">
-                    <a href="http://kostroma-film.ru" target="_blank" style={{ opacity: 0.4 }}>http://kostroma-film.ru</a>
+                    <a href="http://kostromafilm.ru/" target="_blank" style={{ opacity: 0.4 }}>http://kostromafilm.ru/</a>
                   </p>
                 </div>
                 <div className="section-content">
