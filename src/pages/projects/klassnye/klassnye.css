@@ -1,0 +1,34 @@
+.page-klassnye .first {
+	background-image: linear-gradient(135deg, #333 0%, #000 100%);
+}
+.page-klassnye a {
+	color:#111!important;
+}
+.page-klassnye .first a {
+	color:#fff!important;
+}
+.page-klassnye .second .ipad {
+	position: absolute;
+	width:700px;
+	right:-100px;
+	bottom:-200px;
+}
+@media screen and (max-width:1232px) {
+	.page-klassnye .second .background {
+		padding-top:100px;
+		text-align:center;
+	}
+	.page-klassnye .second .ipad {
+		position: static;
+		width:100%;
+	}
+	.page-klassnye .second .ipad img {
+		width:80%;
+	}
+}
+
+.page-klassnye .fifth {
+  background-image: linear-gradient(135deg, #333 0%, #000 100%);
+  color:#fff!important;
+}
+

@@ -15,6 +15,7 @@ import Prices from "../../pages/prices/Prices.js";
 import notFound from "../../pages/notFound/notFound.js";
 import RouteDefaultContainer from "../../containers/RouteDefaultContainer.js";
 import RoutePageContainer from "../../containers/RoutePageContainer.js";
+import Klassnye from "../../pages/projects/klassnye/Klassnye.js";
 
 const App = props => {
 	const { location } = props;
@@ -34,6 +35,7 @@ const App = props => {
 				<RouteDefaultContainer path="/music" component={Music} />
 				<RouteDefaultContainer path="/avantazh" component={Avantazh} />
 				<RouteDefaultContainer path="/kino" component={Kino} />
+				<RouteDefaultContainer path="/klassnye" component={Klassnye} />
 				<RouteDefaultContainer component={notFound} />
 			</Switch>
 		</div>

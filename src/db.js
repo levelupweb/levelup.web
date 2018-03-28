@@ -10,7 +10,7 @@ export const projects = [
 		id: 2,
 		slug: 'sustav',
 		title: 'Sustav',
-		description: 'Сайт врача-травматолога Александра Ветошкина',
+		description: 'Сайт Александра Ветошкина',
 		image: 'dist/img/sustav.png'
 	},
 	{
@@ -26,5 +26,12 @@ export const projects = [
 		title: 'Кострома Фильм',
 		description: 'Кинокомпания',
 		image: 'dist/img/kino-prev.png'
+	},
+	{
+		id: 5,
+		slug: 'klassnye',
+		title: 'Классные',
+		description: 'Производитель полуфабрикатов',
+		image: 'dist/img/klassnye-prev.png'
 	}
 ]

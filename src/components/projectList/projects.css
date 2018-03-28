@@ -1,6 +1,5 @@
 .projects {
 	display:flex;
-	justify-content: space-around;
 	align-items: flex-start;
 	flex-wrap:wrap;
 	width:100%;
@@ -14,6 +13,7 @@
 	margin-bottom:20px;
 	min-height:100px;
 	background:#eee;
+	margin-right:2%;
 }
 @media screen and (max-width:533px) {
 	.projects .project {

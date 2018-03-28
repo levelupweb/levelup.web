@@ -5,7 +5,7 @@ import "./notFound.css"
 const notFound = props => 
 	<section className="fullpage center first notFound">
 		<Link to="/">
-			<img src="img/logo-default.png" width="64px" />
+			<img src="/img/logo-default.png" width="64px" />
 		</Link>
 		<p className="primary">Ошибка 404</p>
 	</section>
