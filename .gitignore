@@ -1,15 +1,9 @@
-# See https://help.github.com/ignore-files/ for more about ignoring files.
 .env
-# dependencies
 /node_modules
-# testing
 /coverage
 config.js
-
-# production
 /build
-
-# misc
+/ssl
 .DS_Store
 .env.local
 .env.development.local
