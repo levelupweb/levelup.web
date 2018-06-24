@@ -1,4 +1,11 @@
-.Modal {
+.blocked {
+  overflow: hidden;
+	position: fixed;
+	margin: auto;
+  width: 100%;
+}
+
+.modal {
 	position:fixed;
 	left:0;
 	top:-100%;
@@ -14,28 +21,37 @@
 	justify-content:center;
 	overflow-y:scroll;
 }
-.Modal-wrapper {
-	max-width:550px;
+
+.modal-content {
+	width:100%;
+}
+
+.modal-wrapper {
+	width:650px;
+	max-width:650px;
 	transition:0.4s all ease;
-	padding:0 15px;
-	height: 100%;
+	padding:80px 15px;
   display:flex;
 	align-items:flex-start;
 	justify-content:flex-start;
 	flex-direction:column;
-	padding-top:100px;
+	margin:auto;
+	vertical-align: middle;
 }
-.Modal.open {
+
+.modal.open {
 	top:0;
 	opacity:1.0;
 	visibility: visible;
 	z-index:999;
 }
-.Modal-title small {
+
+.modal-title small {
 	font-weight:100;
 	opacity:0.5;
 }
-.Modal-closer {
+
+.modal-closer {
 	position:absolute;
 	right:20px;
 	top:20px;

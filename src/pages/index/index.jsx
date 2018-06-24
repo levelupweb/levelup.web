@@ -3,8 +3,8 @@ import { Link } from 'react-router-dom'
 import ProjectList from '../../components/projectList/ProjectList.js';
 import { projects } from '../../db.js';
 import { Helmet } from "react-helmet";
-import Socials from '../../components/socials/Socials.js'
-import "./index.css";
+import Socials from '../../components/Socials'
+import "./styles.css";
 
 class Index extends React.Component {
   constructor(props) {

@@ -1,5 +1,5 @@
 import React from 'react';
-import './socials.css'
+import './styles.css'
 
 const Socials = () => 
 	<div className="socials">
@@ -33,7 +33,6 @@ const Socials = () =>
 				<i className="fa fa-facebook"></i>
 			</a>
 		</div>
-		
 	</div>
 
 export default Socials;

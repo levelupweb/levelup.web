@@ -13,8 +13,8 @@ import Kino from "../../pages/projects/kino/Kino.js";
 import Music from "../../pages/projects/music/Music.js";
 import Prices from "../../pages/prices/Prices.js";
 import notFound from "../../pages/notFound/notFound.js";
-import RouteDefaultContainer from "../../containers/RouteDefaultContainer.js";
-import RoutePageContainer from "../../containers/RoutePageContainer.js";
+import DefaultContainer from "../../containers/Default";
+import PageContainer from "../../containers/Page";
 import Klassnye from "../../pages/projects/klassnye/Klassnye.js";
 
 const App = props => {
@@ -26,17 +26,17 @@ const App = props => {
 				key={location.key}
 				onUpdate={() => window.scrollTo(0, 0)}
 			>
-				<RouteDefaultContainer exact path="/" component={Index} />
-				<RoutePageContainer path="/about" component={About} />
-				<RoutePageContainer path="/projects" component={Projects} />
-				<RoutePageContainer path="/prices" component={Prices} />
-				<RoutePageContainer path="/contact" component={Contact} />
-				<RouteDefaultContainer path="/sustav" component={Sustav} />
-				<RouteDefaultContainer path="/music" component={Music} />
-				<RouteDefaultContainer path="/avantazh" component={Avantazh} />
-				<RouteDefaultContainer path="/kino" component={Kino} />
-				<RouteDefaultContainer path="/klassnye" component={Klassnye} />
-				<RouteDefaultContainer component={notFound} />
+				<DefaultContainer exact path="/" component={Index} />
+				<PageContainer path="/about" component={About} />
+				<PageContainer path="/projects" component={Projects} />
+				<PageContainer path="/prices" component={Prices} />
+				<PageContainer path="/contact" component={Contact} />
+				<DefaultContainer path="/sustav" component={Sustav} />
+				<DefaultContainer path="/music" component={Music} />
+				<DefaultContainer path="/avantazh" component={Avantazh} />
+				<DefaultContainer path="/kino" component={Kino} />
+				<DefaultContainer path="/klassnye" component={Klassnye} />
+				<DefaultContainer component={notFound} />
 			</Switch>
 		</div>
 	);

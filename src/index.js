@@ -2,7 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom";
 import { HashRouter, BrowserRouter  } from 'react-router-dom';
 import registerServiceWorker from "./registerServiceWorker";
-import App from './components/app/App.js';
+import App from './components/App';
 
 class ScrollToTop extends React.Component {
   componentDidUpdate(prevProps) {
