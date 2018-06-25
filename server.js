@@ -2,14 +2,14 @@ const fs = require('fs');
 const express = require('express');
 const bodyParser = require('body-parser');
 const config = require('./config').server;
-const { checkContactData, emailContactHandler } = require('./emailContact');
+const { checkContactData, emailContactHandler } = require('./email');
 
 // server rendering
 const React = require('react');
 const { renderToString } = require('react-dom/server');
 const { Helmet } = require('react-helmet');
 const StaticRouter = require('react-router-dom/StaticRouter').default; 
-const App = require('./src/js/components/App').default; 
+const App = require('./src/components/App').default; 
 const document = require('./document');
 
 const https = require('https');
@@ -35,7 +35,7 @@ app.get('*', (req, res) => {
   res.send(document(html, Helmet.renderStatic()));
 });
 
-app.post(config.contactposturl, [...checkContactData], emailContactHandler);
+app.post(config.contactemail, [...checkContactData], emailContactHandler);
 
 let server;
 

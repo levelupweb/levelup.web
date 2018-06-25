@@ -52,17 +52,30 @@ class ContactForm extends React.Component {
           .values(error.response.data.errors)
           .map(err => err.msg));
       }
-      return this.setState({ error: 'Сервер вернул непредвиденную ошибку. Попробуйте позже' });
+      return this.setState({ 
+        error: 'Сервер вернул непредвиденную ошибку. Попробуйте позже',
+        isHydrating: false,
+      });
     }
-    return this.setState({ error: 'Не удалось соединиться с сервером' });
+    return this.setState({ 
+      error: 'Не удалось соединиться с сервером',
+      isHydrating: false,
+    });
   }
 
   handleSuccess() {
-    this.setState({ message: {} }, () => this.form.reset());
+    this.setState({ 
+      message: {},
+      isHydrating: false,
+      isSended: true,
+    }, () => this.form.reset());
   }
 
   handleValidationErrors(errors) {
-    this.setState({ errors });
+    this.setState({ 
+      errors,
+      isHydrating: false,
+    });
   }
 
   bindFormDefaults() {
@@ -84,6 +97,7 @@ class ContactForm extends React.Component {
   submit() {
     this.setState({
       error: null,
+      isHydrating: true,
       errors: [],
     }, () => sendemail(this.state.message, this.props.url)
       .then(this.handleSuccess)
@@ -123,18 +137,21 @@ class ContactForm extends React.Component {
   }
 
   renderSubmit() {
+    const { isHydrating } = this.state;
+
     return (
       <button
         className="button ghost"
         onClick={this.submit}
       >
-        Отправить
+        {isHydrating ? "Подождите..." : "Отправить"}
       </button>
     );
   }
 
   render() {
     const { isFluid } = this.props;
+    const { isSended } = this.state; 
 
     return (
       <form

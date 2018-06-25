@@ -1,10 +1,10 @@
 import React from "react";
-import Price from "./Price.js";
-import pricelist from './pricelist.js';
-import ContactForm from '../../components/contactForm/ContactForm.js';
-import Modal from '../../components/modal/Modal.js';
+import Price from "../../components/Price";
+import pricelist from './data';
+import ContactForm from '../../components/ContactForm';
+import Modal from '../../components/Modal';
 import { Helmet } from "react-helmet";
-import "./prices.css";
+import "./styles.css";
 
 const contactModalConfiguration = {
 	title: 'Обратная связь',
@@ -48,7 +48,7 @@ const renderContactForm = () => <ContactForm
 
 const Prices = props => {
 	return (
-		<div className="page-prices page">
+		<div className="page-prices">
 			<Helmet>
         <title>Цены - Levelup Web</title>
         <meta name="description" content="Цены на разработку. Студия веб-разработок Levelup Web" />
@@ -60,7 +60,7 @@ const Prices = props => {
   			<meta property="og:site_name" content="Levelup Web" />
   			<meta property="og:title" content="Цены - Levelup Web Project" />
   			<meta property="og:description" content="Цены на разработку. Студия веб-разработок" />
-  			<meta property="og:url" content="http://web.levelupworlds.com/prices" />
+  			<meta property="og:url" content="https://web.levelupworlds.com/prices" />
     	</Helmet>
 			<div className="block">
 				<div className="block-title left" id="prices">

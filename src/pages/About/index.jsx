@@ -1,10 +1,10 @@
 import React from "react";
 import { Helmet } from "react-helmet";
-import "./about.css";
+import "./styles.css";
 
 const About = props => {
 	return (
-		<div className="page-about page">
+		<div className="page-about">
 			<Helmet>
         <title>О нас - Levelup Web</title>
         <meta name="description" content="О компании Levelup Web. Студия веб-разработок" />
@@ -16,7 +16,7 @@ const About = props => {
     		<meta property="og:site_name" content="Levelup Web" />
     		<meta property="og:title" content="О нас - Levelup Web Project" />
     		<meta property="og:description" content="О компании Levelup Web. Студия веб-разработок" />
-    		<meta property="og:url" content="http://web.levelupworlds.com/about" />
+    		<meta property="og:url" content="https://web.levelupworlds.com/about" />
     	</Helmet>
 			<div className="block">
 				<div className="block-title left" id="about-us">
@@ -75,7 +75,7 @@ const About = props => {
 				</p>
 			</div>
 			<div className="block">
-				<a href="http://levelupworlds.com/#/page/career" className="button">Вакансии <i className="fa fa-external-link"></i></a>
+				<a href="https://levelupworlds.com/career" className="button">Вакансии <i className="fa fa-external-link"></i></a>
 			</div>
 		</div>
 	)

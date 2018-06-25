@@ -13,6 +13,7 @@ export default class Field extends Component {
     };
   }
 
+
   handleFieldRef(e) {
     this.input = e;
   }
@@ -53,9 +54,9 @@ export default class Field extends Component {
           return (
             <div className="field">
               {!isActive &&
-              <label onClick={this.makeActive}>
-                {placeholder}
-              </label>
+                <label onClick={this.makeActive}>
+                  {placeholder}
+                </label>
 							}
               <textarea
                 className="field-textarea-element"

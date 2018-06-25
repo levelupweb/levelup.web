@@ -1,66 +1,38 @@
 import React from "react";
-import ContactForm from '../../components/contactForm/ContactForm.js';
-import Modal from '../../components/modal/Modal.js';
+import ContactForm from '../../components/ContactForm';
+import Modal from '../../components/Modal';
 import { Helmet } from "react-helmet";
-import Socials from '../../components/socials/Socials.js'
-import SubscribeForm from '../../components/subscribeForm/SubscribeForm.js';
-import "./contact.css";
+import Socials from '../../components/Socials'
+import config from "../../utils/config";
+import "./styles.css";
 
-const contactFormFields = [
-	{
-		fieldName: 'Имя клиента',
-		placeholder: 'Ваше имя',
-		name: 'userName',
-		type: 'text'
-	},
-	{
-		fieldName: 'E-Mail',
-		placeholder: 'Ваш E-Mail',
-		name: 'userEmail',
-		type: 'text'
-	},
-	{
-		fieldName: 'Мобильный телефон',
-		placeholder: 'Контактный телефон',
-		name: 'userPhone',
-		type: 'text'
-	},
-	{
-		fieldName: 'Сообщение',
-		placeholder: 'Ваше сообщение',
-		name: 'userMessage',
-		type: 'textarea'
-	}
-]
-
-const contactModalConfiguration = {
-	title: 'Обратная связь',
-	description: 'Сообщение',
-	content: 'С вашими деловыми предложениями вы можете обращаться при помощи данной формы обратной связи'
-}
-
-const subscribeModalConfiguration = {
-	title: 'Извините, в данный момент рассылка недоступна',
-	description: 'Но скоро всё обязательно вернётся! :)',
-}
-
-const contactFormRules = {
-	userName: ['required'],
-	userEmail: ['required', 'email'],
-	userPhone: ['required', 'mobile'],
-	userMessage: ['required']
-}
-
-const renderContactForm = () => <ContactForm 
-	isFluid={true} 
-	rules={contactFormRules}
-	fields={contactFormFields} />
-
-const renderSubscribeForm = () => <SubscribeForm />
+const contactFormFields = [{
+  placeholder: 'Ваше имя',
+  name: 'name',
+  type: 'text',
+}, {
+  placeholder: 'Ваш E-Mail',
+  name: 'email',
+  type: 'text',
+}, {
+  placeholder: 'Контактный телефон',
+  name: 'phone',
+  type: 'text',
+}, {
+  placeholder: 'Ваше сообщение',
+  name: 'message',
+  type: 'textarea',
+}];
 
 const Contact = props => {
+	const contactModalConfiguration = {
+    title: 'Обратная связь',
+    description: 'Сообщение',
+    content: 'С вашими деловыми предложениями вы можете обращаться при помощи данной формы обратной связи',
+	};
+	
 	return (
-		<div className="page-contact page">
+		<div className="page-contact">
 			<Helmet>
         <title>Контакты - Levelup Web</title>
         <meta name="description" content="Контакты Levelup Worlds. Digital-студия полного цикла" />
@@ -112,18 +84,18 @@ const Contact = props => {
 				<Socials />
 			</div>
 			<div className="block">
-				<div className="button-group">
-					<div>
-						<Modal options={subscribeModalConfiguration} render={renderSubscribeForm()}>
-							<button className="button">Рассылка</button>
-						</Modal>
-					</div>
-					<div>
-						<Modal options={contactModalConfiguration} render={renderContactForm()}>
-							<button className="button">Написать нам</button>
-						</Modal>
-					</div>
-				</div>
+				<Modal
+					options={contactModalConfiguration}
+					render={(
+						<ContactForm
+							isFluid
+							url={config.contactemail}
+							fields={contactFormFields}
+						/>
+					)}
+				>
+					<button className="button">Написать нам</button>
+				</Modal>
 			</div>
 		</div>
 	)

@@ -1,12 +1,12 @@
 import React from "react";
-import { projects } from '../../db.js'
-import ProjectList from '../../components/projectList/ProjectList.js'
+import { projects } from '../../db'
+import ProjectList from '../../components/ProjectList'
 import { Helmet } from "react-helmet";
-import "./projects.css";
+import "./styles.css";
 
 const Projects = props => {
 	return (
-		<div className="page-projects page">
+		<div className="page-projects">
 			<Helmet>
         <title>Проекты - Levelup Web</title>
         <meta name="description" content="Кейсы к выполненным проектам. Студия веб-разработок Levelup Web" />
@@ -18,7 +18,7 @@ const Projects = props => {
   			<meta property="og:site_name" content="Levelup Web" />
   			<meta property="og:title" content="Проекты - Levelup Web Project" />
   			<meta property="og:description" content="Наши проекты. Студия веб-разработок" />
-  			<meta property="og:url" content="http://web.levelupworlds.com/projects" />
+  			<meta property="og:url" content="https://web.levelupworlds.com/projects" />
     	</Helmet>
 			<div className="block">
 				<div className="block-title left" id="projects">

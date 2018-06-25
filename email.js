@@ -21,6 +21,7 @@ const emailserver = emailjs.server.connect({
   password: config.smtppassword,
   host:	config.smtphost,
   ssl: true,
+  port: 465,
 });
 
 module.exports.checkContactData = [
@@ -60,7 +61,7 @@ module.exports.emailContactHandler = (req, res) => {
   const message	= {
     text: 'Новое сообщение с сайта Web.levelupworlds.com',
     from: config.mail.sender,
-    to: `<${  config.mail.receiever  }>`,
+    to: `<${config.mail.receiever}>`,
     subject: 'Новое сообщение с сайта Web.levelupworlds.com',
     attachment: [{
       data: emailBody(req.body),

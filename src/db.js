@@ -4,34 +4,47 @@ export const projects = [
 		slug: 'music',
 		title: 'Music',
 		description: 'Сайт музыкального лейбла Levelup Music',
-		image: 'dist/img/levelupmusic.png'
+		image: 'dist/img/levelupmusic.png',
+		link: "https://music.levelupworlds.com",
 	},
 	{
 		id: 2,
 		slug: 'sustav',
 		title: 'Sustav',
 		description: 'Сайт Александра Ветошкина',
-		image: 'dist/img/sustav.png'
+		image: 'dist/img/sustav.png',
+		link: "https://sustav.pro",
 	},
 	{
 		id: 3,
 		slug: 'avantazh',
 		title: 'Avantazh',
 		description: 'Сайт бухгалтерской компании',
-		image: 'dist/img/avantazh.png'
+		image: 'dist/img/avantazh.png',
+		link: "http://avantazh-expert.com",
 	},
 	{
 		id: 4,
 		slug: 'kino',
 		title: 'Кострома Фильм',
 		description: 'Кинокомпания',
-		image: 'dist/img/kino-prev.png'
+		image: 'dist/img/kino-prev.png',
+		link: "https://kostromafilm.ru",
 	},
 	{
 		id: 5,
 		slug: 'klassnye',
 		title: 'Классные',
 		description: 'Производитель полуфабрикатов',
-		image: 'dist/img/klassnye-prev.png'
+		image: 'dist/img/klassnye-prev.png',
+		link: "https://klassnye.com",
+	},
+	{
+		id: 6,
+		slug: 'koryakovtseva',
+		title: 'Marina K.',
+		description: 'Сайт-визитка для инженера-геолога',
+		image: 'dist/img/koryakovtseva.jpg',
+		link: "https://коряковцева.рф",
 	}
 ]

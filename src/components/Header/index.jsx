@@ -17,7 +17,8 @@ const Header = ({ location }) => (
 					to="https://levelupworlds.com/career"
 					target="_blank"
         >
-          <li className={location.pathname === '/career' && 'active'}>Карьера</li>
+          <li className={location.pathname === '/career' && 'active'}>Карьера <i className="fa fa-external-link"></i></li>
+          
         </Link>
         <Link
           to="/prices"

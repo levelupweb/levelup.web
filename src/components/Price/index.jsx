@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './prices.css'
+import './styles.css'
 
 const Price = props => 
 	<div className="price">

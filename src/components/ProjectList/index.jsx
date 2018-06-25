@@ -1,11 +1,15 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import Project from './Project.js';
-import './projects.css';
+import Project from './components/Project';
+import './styles.css';
 
 const renderProjects = (projects, isSmall) => 
 	projects.map((project, i) => 
-		<Project small={isSmall} project={project} key={i} />
+		<Project 
+			small={isSmall} 
+			project={project} 
+			key={i} 
+		/>
 	)
 
 const ProjectList = props => 

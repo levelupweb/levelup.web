@@ -2,8 +2,8 @@ import React from 'react';
 import { NotificationContainer } from 'react-notifications';
 import { Route } from 'react-router-dom';
 import PropTypes from 'prop-types';
-import Footer from '../components/Footer';
-import Header from '../components/Header';
+import Footer from '../../components/Footer';
+import Header from '../../components/Header';
 import './styles.css';
 
 const RoutePageContainer = ({ component }) => (
@@ -14,7 +14,9 @@ const RoutePageContainer = ({ component }) => (
         <div className="site-content">
           <div className="container text blocks inner-content">
             <Header />
-            {React.createElement(component)}
+            <div className="page">
+              {React.createElement(component)}
+            </div>
             <Footer page />
           </div>
         </div>

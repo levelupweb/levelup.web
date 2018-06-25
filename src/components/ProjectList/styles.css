@@ -68,11 +68,12 @@
   border-radius: 4px;
   text-align: left;
   transition: 0.2s all ease;
-  z-index:50;
+	z-index:50;
 }
 .project .project-title .title {
 	margin-top:0px;
 	transition: 0.2s all ease;
+	font-size:30px;
 }
 .project .project-title .description {
 	color:#777;

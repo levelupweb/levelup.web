@@ -1,6 +1,10 @@
 .header {
-	transition:0.2s all ease;
+	position: absolute;
+	top:0;
+	left:0;
+	width:100%;
 }
+
 .header .navigation {
 	border-bottom:1px solid #eee;
 	display:flex;
@@ -32,7 +36,8 @@
 .header .navigation ul a li i {
 	font-size:12px;
 	vertical-align: middle;
-	opacity:.4;
+	color: #000;
+	opacity:.6;
 }
 .header .header-logo {
 	display:block;
@@ -40,4 +45,8 @@
 .header .header-logo img {
 	width:30px;
 	height:30px;
+}
+.header .navigation ul a li.active {
+	font-weight:bold;
+	color:#0012ff;
 }

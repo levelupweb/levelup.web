@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from 'react-router-dom'
-import ProjectList from '../../components/projectList/ProjectList.js';
-import { projects } from '../../db.js';
+import ProjectList from '../../components/ProjectList';
+import { projects } from '../../db';
 import { Helmet } from "react-helmet";
 import Socials from '../../components/Socials'
 import "./styles.css";
@@ -25,7 +25,7 @@ class Index extends React.Component {
     			<meta property="og:site_name" content="Levelup Web" />
     			<meta property="og:title" content="Levelup Web Project" />
     			<meta property="og:description" content="Levelup Web - студия полного цикла. Студия веб-разработок" />
-    			<meta property="og:url" content="http://web.levelupworlds.com/" />
+    			<meta property="og:url" content="https://web.levelupworlds.com/" />
     		</Helmet>
 				<section className="fullpage center first blocks">
 					<div className="background">

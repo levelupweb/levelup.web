@@ -3,4 +3,10 @@
   display:flex;
   justify-content: center;
   align-items:center;
+  flex-direction: column;
+}
+
+.page {
+  padding-top: 90px;
+  padding-bottom: 90px;
 }
